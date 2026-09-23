@@ -141,7 +141,11 @@ def score_one(m, tvl, tvlchg, fees, unlock, btc30, btc7):
         f += 15 if r <= 2 else 12 if r <= 5 else 9 if r <= 10 else 5 if r <= 20 else 2
         t7 = d["tvl7"]
         f += (10 if t7 >= 10 else 6 if t7 >= 0 else 3 if t7 >= -10 else 0) if t7 is not None else 0
+    thin_tvl = (d["tvl"] or 0) < 2e7          # TVL 2천만 달러 미만
+    thin_fee = (d["fees30"] or 0) < 1e5        # 30일 수수료 10만 달러 미만
     d["track"] = "펀더멘털" if (d["fees30"] or d["tvl"]) else "내러티브"
+    if d["track"] == "펀더멘털" and thin_tvl and thin_fee:
+        warn.append("펀더멘털 데이터 빈약(사실상 모멘텀 종목)")
 
     # 모멘텀 40
     mo = 0
@@ -159,6 +163,9 @@ def score_one(m, tvl, tvlchg, fees, unlock, btc30, btc7):
 
     # 리스크 감점
     r = 0
+    if d["mc_fdv"] is not None and d["mc_fdv"] > 1.05:
+        warn.append(f"데이터 오류 의심: MC/FDV {d['mc_fdv']:.2f} (유통량이 총발행량보다 큼)")
+        d["mc_fdv"] = None  # 희석 감점 판단에서 제외
     if d["mc_fdv"] is not None:
         if d["mc_fdv"] < 0.4:
             r -= 12
