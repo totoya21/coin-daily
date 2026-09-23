@@ -118,5 +118,10 @@
       "target_max": 60
     },
     "min_history_days": 30
+  },
+  "alt_screener": {
+    "min_mcap_usd": 100000000,
+    "min_volume_usd": 10000000,
+    "top_n": 15
   }
 }
