@@ -71,7 +71,15 @@ def llama_data():
                 if p.get("change_7d") is not None:
                     chg.setdefault(gid, num(p["change_7d"]))
     except Exception as e:
-        notes.append(f"DefiLlama TVL 실패: {str(e)[:80]}")
+        notes.append(f"DefiLlama 프로토콜 TVL 실패: {str(e)[:80]}")
+    try:  # 체인 자체의 TVL (L1/L2는 여기에 잡힌다)
+        chains, _ = get_json(LLAMA + "/v2/chains", timeout=60)
+        for c in chains:
+            gid, v = c.get("gecko_id"), num(c.get("tvl"))
+            if gid and v:
+                tvl[gid] = max(tvl.get(gid, 0), v)
+    except Exception as e:
+        notes.append(f"DefiLlama 체인 TVL 실패: {str(e)[:80]}")
     try:
         f, _ = get_json(LLAMA + "/overview/fees",
                         {"excludeTotalDataChart": "true", "excludeTotalDataChartBreakdown": "true"}, timeout=60)
@@ -140,13 +148,14 @@ def score_one(m, tvl, tvlchg, fees, unlock, btc30, btc7):
     rs30 = (c30 - btc30) if (c30 is not None and btc30 is not None) else None
     rs7 = (c7 - btc7) if (c7 is not None and btc7 is not None) else None
     d["rs30"], d["rs7"] = rs30, rs7
-    if rs30 is not None:
-        mo += 20 if 10 <= rs30 <= 60 else 12 if (0 <= rs30 < 10 or 60 < rs30 <= 100) else 6 if rs30 > 100 else 4
+    if rs30 is not None:  # BTC 대비 +30%p 부근이 최고점, 너무 안 오르거나 너무 오른 쪽 모두 감점
+        mo += max(2.0, min(20.0, 20 - abs(rs30 - 30) / 4.5))
     if rs7 is not None:
-        mo += 10 if rs7 > 0 else 3
+        mo += max(0.0, min(10.0, 5 + rs7 / 2))
     vm = (vol / mc) if (vol and mc) else 0
     d["vol_mcap"] = vm * 100
-    mo += 10 if vm >= 0.15 else 7 if vm >= 0.07 else 4 if vm >= 0.03 else 1
+    mo += max(0.0, min(10.0, vm * 60))
+    mo = round(mo, 1)
 
     # 리스크 감점
     r = 0
@@ -174,8 +183,8 @@ def score_one(m, tvl, tvlchg, fees, unlock, btc30, btc7):
     d["f"], d["mo"], d["r"] = f, mo, r
     # 펀더멘털 데이터가 없는 코인(밈·신규 등)은 같은 잣대로 비교하지 않고,
     # 모멘텀+리스크만 100점으로 환산해 별도 트랙으로 본다.
-    d["score"] = (max(0, min(100, f + mo + r)) if d["track"] == "펀더멘털"
-                  else round(max(0, min(40, mo + r)) / 40 * 100))
+    d["score"] = (round(max(0, min(100, f + mo + r)), 1) if d["track"] == "펀더멘털"
+                  else round(max(0, min(40, mo + r)) / 40 * 100, 1))
     d["warn"] = warn
     return d
 
@@ -191,8 +200,11 @@ def regime(key):
     btc7 = num(m["bitcoin"].get("price_change_percentage_7d_in_currency"))
     eth30 = num(m["ethereum"].get("price_change_percentage_30d_in_currency"))
     ethbtc30 = (eth30 - btc30) if (eth30 is not None and btc30 is not None) else None
-    ok = sum([ethbtc30 is not None and ethbtc30 > 0, True])
-    verdict = ("알트 우호" if (ethbtc30 or 0) > 0 else "BTC 우위 — 알트 비중을 늘릴 국면은 아님")
+    e = ethbtc30 or 0
+    verdict = ("알트 우호 (ETH가 BTC를 뚜렷이 앞섬)" if e > 3 else
+               "BTC 우위 — 알트 비중을 늘릴 국면은 아님" if e < -3 else
+               "중립 — 알트 국면이라고 보기 어려움, 신규 진입은 보수적으로")
+    ok = 1 if e > 3 else -1 if e < -3 else 0
     return {"btc_d": btc_d, "usdt_d": usdt_d, "btc30": btc30, "btc7": btc7,
             "ethbtc30": ethbtc30, "verdict": verdict, "ok": ok}
 
