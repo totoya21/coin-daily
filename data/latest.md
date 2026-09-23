@@ -1,6 +1,6 @@
 # 코인 데일리 스냅샷
 
-- 수집 시각: 2026-09-23 09:48 KST
+- 수집 시각: 2026-09-23 09:50 KST
 - 결과: 성공 33 / 실패·검증필요 4 / 수동 1 (전체 38)
 - 모든 값은 아래 '출처' 열의 고정 소스에서 가져온 값이다. '이전'은 소스가 준 직전값 또는 지난 수집값.
 
@@ -32,8 +32,8 @@
 | 파생·심리 | 미결제약정(OI) | +0 | — | OI 7일 +16.9%, 가격 +14.0% |
 | 파생·심리 | 옵션 스큐 | +0 | — | +1.00 |
 | 매크로 | 나스닥 | +1 | — | 50일선 위 |
-| 매크로 | DXY | -1 | — | 100.57, 20일 +1.6% (상승) |
-| 매크로 | USD/JPY | +0 | — | 157.50 |
+| 매크로 | DXY | -1 | — | 100.56, 20일 +1.6% (상승) |
+| 매크로 | USD/JPY | +0 | — | 157.51 |
 | 매크로 | CPI·PCE | +0 | — | 둔화−재가속 합계 +0 |
 | 매크로 | 폴리마켓 금리인하 | 제외 | — | FOMC 마켓 미설정 또는 값 없음 |
 
@@ -42,45 +42,45 @@
 | 그룹 | 지표 | 값 | 이전 | 단위 | 데이터 기준 | 상태 | 출처 | 메모 |
 |---|---|---|---|---|---|---|---|---|
 | A.매크로 | 나스닥 종합지수 | 27244.277 | 27122.09 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
-| A.매크로 | 나스닥 5거래일 변화율 | 4.86 |  | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
-| A.매크로 | 나스닥 50일 이평 | 26115.81 |  | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) | 종가가 이평 위면 추세 양호 |
-| A.매크로 | 달러인덱스(DXY) | 100.574 | 100.43 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
-| A.매크로 | DXY 20거래일 변화율 | 1.59 |  | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
-| A.매크로 | USD/JPY | 157.5 | 157.369 | 엔 | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
-| A.매크로 | USD/JPY 5거래일 변화율 | 1.44 |  | % | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
+| A.매크로 | 나스닥 5거래일 변화율 | 4.86 | 4.86 | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
+| A.매크로 | 나스닥 50일 이평 | 26115.81 | 26115.81 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) | 종가가 이평 위면 추세 양호 |
+| A.매크로 | 달러인덱스(DXY) | 100.557 | 100.43 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
+| A.매크로 | DXY 20거래일 변화율 | 1.57 | 1.59 | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
+| A.매크로 | USD/JPY | 157.509 | 157.369 | 엔 | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
+| A.매크로 | USD/JPY 5거래일 변화율 | 1.44 | 1.44 | % | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
 | A.매크로 | CPI 전년비 |  |  |  |  | fail | [FRED](https://fred.stlouisfed.org/series/CPIAUCSL) | list index out of range |
 | A.매크로 | 근원 CPI 전년비 |  |  |  |  | fail | [FRED](https://fred.stlouisfed.org/series/CPILFESL) | list index out of range |
 | A.매크로 | PCE 전년비 | 3.7 | 3.72 | % | 2026-07-01 | ok | [FRED](https://fred.stlouisfed.org/series/PCEPI) | FRED 갱신일 2026-08-26 (발표 후 30일 이내) |
 | A.매크로 | 근원 PCE 전년비 | 3.34 | 3.34 | % | 2026-07-01 | ok | [FRED](https://fred.stlouisfed.org/series/PCEPILFE) | FRED 갱신일 2026-08-26 (발표 후 30일 이내) |
-| A.매크로 | 인플레이션 방향 합계 | 0 |  |  | 2026-09-23 | ok | [FRED](https://fred.stlouisfed.org/) | 최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합 |
-| B.자금흐름 | 테더 도미넌스 | 6.199 |  | % | 2026-09-23 00:41 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) | 상승=위험회피 / TradingView USDT.D와 계산 방식 다름 |
-| B.자금흐름 | 전체 시가총액(TOTAL) | 2.9468 |  | 조$ | 2026-09-23 00:41 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) |  |
+| A.매크로 | 인플레이션 방향 합계 | 0 | 0 |  | 2026-09-23 | ok | [FRED](https://fred.stlouisfed.org/) | 최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합 |
+| B.자금흐름 | 테더 도미넌스 | 6.199 | 6.199 | % | 2026-09-23 00:41 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) | 상승=위험회피 / TradingView USDT.D와 계산 방식 다름 |
+| B.자금흐름 | 전체 시가총액(TOTAL) | 2.9468 | 2.9468 | 조$ | 2026-09-23 00:41 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) |  |
 | B.자금흐름 | BTC 현물 ETF 순유입 |  |  |  |  | fail | [Farside Investors](https://farside.co.uk/btc/) | 403 Client Error: Forbidden for url: https://farside.co.uk/btc/ |
 | C.파생·가격 | BTC 일봉 종가 | 86198.05 | 86594.94 | USD | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
 | C.파생·가격 | RSI(14, 일봉) | 72.2 | 73.74 |  | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) | 70↑ 과매수 / 30↓ 과매도 |
-| C.파생·가격 | BTC 7일 가격 변화율 | 14.04 |  | % | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
+| C.파생·가격 | BTC 7일 가격 변화율 | 14.04 | 14.04 | % | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
 | C.파생·가격 | 선물 미결제약정(OI) | 3.4 | 3.39 | 십억$ | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
-| C.파생·가격 | OI 7일 변화율 | 16.92 |  | % | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 달러 기준 OI라 가격 변동이 섞여 있음 |
+| C.파생·가격 | OI 7일 변화율 | 16.92 | 16.92 | % | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 달러 기준 OI라 가격 변동이 섞여 있음 |
 | C.파생·가격 | 롱/숏 계정비율 | 0.94 | 0.96 | 배 | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 1 초과면 롱 우위 |
-| C.파생·가격 | 롱/숏 계정비율 분포 위치 | 6.7 |  | 백분위 | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림 |
+| C.파생·가격 | 롱/숏 계정비율 분포 위치 | 6.7 | 6.7 | 백분위 | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림 |
 | C.파생·가격 | 펀딩비(최근 1회) | 0.0021 | 0.0054 | % | 2026-09-23 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 0.05%↑ 과열 |
-| C.파생·가격 | 펀딩비 최근 3회 평균 | 0.0059 |  | % | 2026-09-23 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
+| C.파생·가격 | 펀딩비 최근 3회 평균 | 0.0059 | 0.0059 | % | 2026-09-23 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
 | C.파생·가격 | DVOL(BTC 내재변동성) | 37.31 | 38.02 |  | 2026-09-23 00:00 UTC | ok | [Deribit](https://www.deribit.com/statistics/BTC/volatility-index) |  |
-| C.파생·가격 | 옵션 25델타 스큐(풋IV−콜IV) | 1.0 |  | vol pt | 2026-09-23 00:49 UTC | ok | [Deribit](https://www.deribit.com/options/BTC) | 만기 2026-10-30, 콜 BTC-30OCT26-95000-C / 풋 BTC-30OCT26-81000-P. 양수면 하방 헤지 수요 우위 |
-| D.온체인 | MVRV Z-Score | 0.7545 |  |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 0 이하 역사적 매수구간 / 7 이상 과열 |
-| D.온체인 | 단기보유자 MVRV | 1.07 |  |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) |  |
-| D.온체인 | 단기보유자 실현가(STH-RP) | 80764.0 |  | $ | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 가격 ÷ STH-MVRV로 계산 (가격 86418.0$). 가격이 위면 강세 유지 |
+| C.파생·가격 | 옵션 25델타 스큐(풋IV−콜IV) | 1.0 | 1.0 | vol pt | 2026-09-23 00:50 UTC | ok | [Deribit](https://www.deribit.com/options/BTC) | 만기 2026-10-30, 콜 BTC-30OCT26-95000-C / 풋 BTC-30OCT26-81000-P. 양수면 하방 헤지 수요 우위 |
+| D.온체인 | MVRV Z-Score | 0.7545 | 0.7545 |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 0 이하 역사적 매수구간 / 7 이상 과열 |
+| D.온체인 | 단기보유자 MVRV | 1.07 | 1.07 |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) |  |
+| D.온체인 | 단기보유자 실현가(STH-RP) | 80764.0 | 80764.0 | $ | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 가격 ÷ STH-MVRV로 계산 (가격 86418.0$). 가격이 위면 강세 유지 |
 | D.온체인 | 거래소 BTC 유입 | 39392.9 | 12118.4 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
 | D.온체인 | 거래소 BTC 유출 | 43259.9 | 12143.1 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 순유입 7일 합 | -4005.4 |  | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 순유입 7일 합 분포 위치 | 72.2 |  | 백분위 | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 최근 90일 분포 기준. 높을수록 매도 압력 |
-| D.온체인 | 거래소 BTC 순유입 | -3867.0 |  | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 양수=매도 압력 / 음수=축적 |
-| D.온체인 | 거래소 보유량 30일 변화율 | 0.2 |  | % | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 순유입 7일 합 | -4005.4 | -4005.4 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 순유입 7일 합 분포 위치 | 72.2 | 72.2 | 백분위 | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 최근 90일 분포 기준. 높을수록 매도 압력 |
+| D.온체인 | 거래소 BTC 순유입 | -3867.0 | -3867.0 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 양수=매도 압력 / 음수=축적 |
+| D.온체인 | 거래소 보유량 30일 변화율 | 0.2 | 0.2 | % | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
 | D.온체인 | 거래소 BTC 보유량 | 2719494.0 | 2721136.0 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
 | D.온체인 | 채굴자→거래소 유입 |  |  |  |  | manual | [수동 확인](https://cryptoquant.com/asset/btc/chart/miner-flows) | 무료 소스 없음 → 수동 확인 목록 참고 |
 | D.온체인 | 고래비율(근사) |  |  |  |  | fail | [Arkham + Coin Metrics](https://intel.arkm.com/) | Arkham 키 없음 |
 
-## 지난밤 뉴스 (09-22 18:00 ~ 09-23 09:48 KST)
+## 지난밤 뉴스 (09-22 18:00 ~ 09-23 09:50 KST)
 
 피드 상태: CoinDesk: 14건 / The Block: 10건 / Cointelegraph: 15건 / 블록미디어: 10건
 
