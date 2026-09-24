@@ -1,141 +1,139 @@
 # 코인 데일리 스냅샷
 
-- 수집 시각: 2026-09-23 10:01 KST
+- 수집 시각: 2026-09-24 09:46 KST
 - 결과: 성공 39 / 실패·검증필요 1 / 수동 1 (전체 41)
 - 모든 값은 아래 '출처' 열의 고정 소스에서 가져온 값이다. '이전'은 소스가 준 직전값 또는 지난 수집값.
 
 ## 점수 (스크립트 계산 — 리포트에서 재계산하지 말 것)
 
-- **판정: 중립** → BTC 목표 비중 **60%** (전일 판정: 없음)
-- 오늘 총점 12.4 / 3일 평균 12.4 / 오늘 구간 '중립'
+- **판정: 중립** → BTC 목표 비중 **60%** (전일 판정: 중립)
+- 오늘 총점 21.4 / 3일 평균 16.9 / 오늘 구간 '중립'
 - 판정 가능 지표 14/17개 (82%)
 
 | 그룹 | 가중치 | 그룹 점수 |
 |---|---|---|
-| 수급 | 30% | 16.7 |
-| 파생·심리 | 30% | 10.0 |
+| 수급 | 30% | 66.7 |
+| 파생·심리 | 30% | -10.0 |
 | 밸류에이션 | 25% | 25.0 |
 | 매크로 | 15% | -12.5 |
 
 | 그룹 | 지표 | 점수 | 어제 | 근거 |
 |---|---|---|---|---|
-| 밸류에이션 | MVRV Z | +1 | — | MVRV Z 0.75 |
-| 밸류에이션 | 가격÷STH-RP | +0 | — | 가격÷STH-RP 1.070 |
-| 수급 | 현물 ETF 순유입 | +2 | — | 3거래일 연속 순유입 |
-| 수급 | 거래소 순유입(7일) | -1 | — | 7일 순유입 분포 72백분위 |
-| 수급 | 거래소 보유량(30일) | +0 | — | 30일 +0.20% (±0.5% 미만은 0점) |
+| 밸류에이션 | MVRV Z | +1 | +1 | MVRV Z 0.77 |
+| 밸류에이션 | 가격÷STH-RP | +0 | +0 | 가격÷STH-RP 1.070 |
+| 수급 | 현물 ETF 순유입 | +2 | +2 | 4거래일 연속 순유입 |
+| 수급 | 거래소 순유입(7일) | +2 | -1 | 7일 순유입 분포 9백분위 |
+| 수급 | 거래소 보유량(30일) | +0 | +0 | 30일 -0.39% (±0.5% 미만은 0점) |
 | 수급 | 고래비율(근사) | 제외 | — | 값 없음 |
 | 수급 | 테더 도미넌스(7일) | 제외 | — | 7일 전 값 없음 |
-| 파생·심리 | 펀딩비 | +1 | — | 3회 평균 0.0059% |
-| 파생·심리 | RSI(14) | -2 | — | RSI 72.2 |
-| 파생·심리 | 롱/숏 비율 | +2 | — | 롱/숏 분포 7백분위 |
-| 파생·심리 | 미결제약정(OI) | +0 | — | OI 7일 +16.9%, 가격 +14.0% |
-| 파생·심리 | 옵션 스큐 | +0 | — | +1.06 |
-| 매크로 | 나스닥 | +1 | — | 50일선 위 |
-| 매크로 | DXY | -1 | — | 100.55, 20일 +1.6% (상승) |
-| 매크로 | USD/JPY | +0 | — | 157.59 |
-| 매크로 | CPI·PCE | -1 | — | 둔화−재가속 합계 -1 |
+| 파생·심리 | 펀딩비 | +1 | +1 | 3회 평균 0.0045% |
+| 파생·심리 | RSI(14) | -1 | -2 | RSI 65.4 |
+| 파생·심리 | 롱/숏 비율 | +0 | +2 | 롱/숏 분포 60백분위 |
+| 파생·심리 | 미결제약정(OI) | +0 | +0 | OI 7일 +17.5%, 가격 +10.8% |
+| 파생·심리 | 옵션 스큐 | -1 | +0 | +1.56 (풋 우위 확대, 전일 +1.06) |
+| 매크로 | 나스닥 | +1 | +1 | 50일선 위 |
+| 매크로 | DXY | -1 | -1 | 101.15, 20일 +2.2% (상승) |
+| 매크로 | USD/JPY | +0 | +0 | 158.26 |
+| 매크로 | CPI·PCE | -1 | -1 | 둔화−재가속 합계 -1 |
 | 매크로 | 폴리마켓 금리인하 | 제외 | — | FOMC 마켓 미설정 또는 값 없음 |
 
 ## 지표
 
 | 그룹 | 지표 | 값 | 이전 | 단위 | 데이터 기준 | 상태 | 출처 | 메모 |
 |---|---|---|---|---|---|---|---|---|
-| A.매크로 | 나스닥 종합지수 | 27244.277 | 27122.09 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
-| A.매크로 | 나스닥 5거래일 변화율 | 4.86 | 4.86 | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
-| A.매크로 | 나스닥 50일 이평 | 26115.81 | 26115.81 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) | 종가가 이평 위면 추세 양호 |
-| A.매크로 | 달러인덱스(DXY) | 100.551 | 100.43 | pt | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
-| A.매크로 | DXY 20거래일 변화율 | 1.57 | 1.57 | % | 2026-09-22 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
-| A.매크로 | USD/JPY | 157.588 | 157.369 | 엔 | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
-| A.매크로 | USD/JPY 5거래일 변화율 | 1.5 | 1.44 | % | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
+| A.매크로 | 나스닥 종합지수 | 26936.037 | 27122.09 | pt | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
+| A.매크로 | 나스닥 5거래일 변화율 | 3.67 | 4.86 | % | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) |  |
+| A.매크로 | 나스닥 50일 이평 | 26109.64 | 26115.81 | pt | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/%5EIXIC) | 종가가 이평 위면 추세 양호 |
+| A.매크로 | 달러인덱스(DXY) | 101.146 | 100.43 | pt | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
+| A.매크로 | DXY 20거래일 변화율 | 2.17 | 1.57 | % | 2026-09-23 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/DX-Y.NYB) |  |
+| A.매크로 | USD/JPY | 158.265 | 157.464 | 엔 | 2026-09-24 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
+| A.매크로 | USD/JPY 5거래일 변화율 | 1.44 | 1.5 | % | 2026-09-24 | ok | [Yahoo Finance](https://finance.yahoo.com/quote/JPY%3DX) |  |
 | A.매크로 | CPI 전년비 | 3.71 | 3.54 | % | 2026-08-01 | ok | [FRED](https://fred.stlouisfed.org/series/CPIAUCSL) | FRED 갱신일 2026-09-11 (발표 후 30일 이내) |
 | A.매크로 | 근원 CPI 전년비 | 2.76 | 2.79 | % | 2026-08-01 | ok | [FRED](https://fred.stlouisfed.org/series/CPILFESL) | FRED 갱신일 2026-09-11 (발표 후 30일 이내) |
 | A.매크로 | PCE 전년비 | 3.7 | 3.72 | % | 2026-07-01 | ok | [FRED](https://fred.stlouisfed.org/series/PCEPI) | FRED 갱신일 2026-08-26 (발표 후 30일 이내) |
 | A.매크로 | 근원 PCE 전년비 | 3.34 | 3.34 | % | 2026-07-01 | ok | [FRED](https://fred.stlouisfed.org/series/PCEPILFE) | FRED 갱신일 2026-08-26 (발표 후 30일 이내) |
-| A.매크로 | 인플레이션 방향 합계 | -1 | 0 |  | 2026-09-23 | ok | [FRED](https://fred.stlouisfed.org/) | 최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합 |
-| B.자금흐름 | 테더 도미넌스 | 6.204 | 6.199 | % | 2026-09-23 01:01 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) | 상승=위험회피 / TradingView USDT.D와 계산 방식 다름 |
-| B.자금흐름 | 전체 시가총액(TOTAL) | 2.9461 | 2.9468 | 조$ | 2026-09-23 01:01 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) |  |
-| B.자금흐름 | BTC 현물 ETF 순유입(전체) | 999.0 | 433.0 | 백만$ | 2026-09-21 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) | 3거래일 연속 순유입 / 집계 기준일 2026-09-21 |
-| B.자금흐름 | IBIT(블랙록) 순유입 | 381.4 | 108.4 | 백만$ | 2026-09-21 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
-| B.자금흐름 | ETF 5거래일 순유입 합계 | 845.1 |  | 백만$ | 2026-09-21 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
-| B.자금흐름 | ETF 연속일수(+유입/−유출) | 3 |  | 일 | 2026-09-21 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
-| C.파생·가격 | BTC 일봉 종가 | 86198.05 | 86594.94 | USD | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
-| C.파생·가격 | RSI(14, 일봉) | 72.2 | 73.74 |  | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) | 70↑ 과매수 / 30↓ 과매도 |
-| C.파생·가격 | BTC 7일 가격 변화율 | 14.04 | 14.04 | % | 2026-09-22 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
-| C.파생·가격 | 선물 미결제약정(OI) | 3.4 | 3.39 | 십억$ | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
-| C.파생·가격 | OI 7일 변화율 | 16.92 | 16.92 | % | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 달러 기준 OI라 가격 변동이 섞여 있음 |
-| C.파생·가격 | 롱/숏 계정비율 | 0.94 | 0.96 | 배 | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 1 초과면 롱 우위 |
-| C.파생·가격 | 롱/숏 계정비율 분포 위치 | 6.7 | 6.7 | 백분위 | 2026-09-22 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림 |
-| C.파생·가격 | 펀딩비(최근 1회) | 0.0021 | 0.0054 | % | 2026-09-23 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 0.05%↑ 과열 |
-| C.파생·가격 | 펀딩비 최근 3회 평균 | 0.0059 | 0.0059 | % | 2026-09-23 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
-| C.파생·가격 | DVOL(BTC 내재변동성) | 37.31 | 38.24 |  | 2026-09-23 01:00 UTC | ok | [Deribit](https://www.deribit.com/statistics/BTC/volatility-index) |  |
-| C.파생·가격 | 옵션 25델타 스큐(풋IV−콜IV) | 1.06 | 1.0 | vol pt | 2026-09-23 01:02 UTC | ok | [Deribit](https://www.deribit.com/options/BTC) | 만기 2026-10-30, 콜 BTC-30OCT26-95000-C / 풋 BTC-30OCT26-81000-P. 양수면 하방 헤지 수요 우위 |
-| D.온체인 | MVRV Z-Score | 0.7545 | 0.7545 |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 0 이하 역사적 매수구간 / 7 이상 과열 |
-| D.온체인 | 단기보유자 MVRV | 1.07 | 1.07 |  | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) |  |
-| D.온체인 | 단기보유자 실현가(STH-RP) | 80764.0 | 80764.0 | $ | 2026-09-16 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 가격 ÷ STH-MVRV로 계산 (가격 86418.0$). 가격이 위면 강세 유지 |
-| D.온체인 | 거래소 BTC 유입 | 39392.9 | 12118.4 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 BTC 유출 | 43259.9 | 12143.1 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 순유입 7일 합 | -4005.4 | -4005.4 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 순유입 7일 합 분포 위치 | 72.2 | 72.2 | 백분위 | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 최근 90일 분포 기준. 높을수록 매도 압력 |
-| D.온체인 | 거래소 BTC 순유입 | -3867.0 | -3867.0 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 양수=매도 압력 / 음수=축적 |
-| D.온체인 | 거래소 보유량 30일 변화율 | 0.2 | 0.2 | % | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
-| D.온체인 | 거래소 BTC 보유량 | 2719494.0 | 2721136.0 | BTC | 2026-09-21 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| A.매크로 | 인플레이션 방향 합계 | -1 | -1 |  | 2026-09-24 | ok | [FRED](https://fred.stlouisfed.org/) | 최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합 |
+| B.자금흐름 | 테더 도미넌스 | 6.368 | 6.204 | % | 2026-09-24 00:43 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) | 상승=위험회피 / TradingView USDT.D와 계산 방식 다름 |
+| B.자금흐름 | 전체 시가총액(TOTAL) | 2.875 | 2.9461 | 조$ | 2026-09-24 00:43 UTC | ok | [CoinGecko](https://www.coingecko.com/en/global-charts) |  |
+| B.자금흐름 | BTC 현물 ETF 순유입(전체) | 714.7 | 999.0 | 백만$ | 2026-09-22 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) | 4거래일 연속 순유입 / 집계 기준일 2026-09-22 |
+| B.자금흐름 | IBIT(블랙록) 순유입 | 350.3 | 381.4 | 백만$ | 2026-09-22 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
+| B.자금흐름 | ETF 5거래일 순유입 합계 | 2010.2 | 845.1 | 백만$ | 2026-09-22 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
+| B.자금흐름 | ETF 연속일수(+유입/−유출) | 4 | 3 | 일 | 2026-09-22 | ok | [TFTC (SoSoValue·Farside 집계)](https://www.tftc.io/bitcoin-etf-flows) |  |
+| C.파생·가격 | BTC 일봉 종가 | 84378.31 | 86198.05 | USD | 2026-09-23 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
+| C.파생·가격 | RSI(14, 일봉) | 65.42 | 72.2 |  | 2026-09-23 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) | 70↑ 과매수 / 30↓ 과매도 |
+| C.파생·가격 | BTC 7일 가격 변화율 | 10.81 | 14.04 | % | 2026-09-23 | ok | [Coinbase 현물](https://www.coinbase.com/price/bitcoin) |  |
+| C.파생·가격 | 선물 미결제약정(OI) | 3.34 | 3.4 | 십억$ | 2026-09-23 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
+| C.파생·가격 | OI 7일 변화율 | 17.51 | 16.92 | % | 2026-09-23 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 달러 기준 OI라 가격 변동이 섞여 있음 |
+| C.파생·가격 | 롱/숏 계정비율 | 1.17 | 1.08 | 배 | 2026-09-23 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 1 초과면 롱 우위 |
+| C.파생·가격 | 롱/숏 계정비율 분포 위치 | 60.0 | 6.7 | 백분위 | 2026-09-23 | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림 |
+| C.파생·가격 | 펀딩비(최근 1회) | 0.0005 | 0.0095 | % | 2026-09-24 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) | 0.05%↑ 과열 |
+| C.파생·가격 | 펀딩비 최근 3회 평균 | 0.0045 | 0.0059 | % | 2026-09-24 00:00 UTC | ok | [OKX 선물](https://www.okx.com/trade-swap/btc-usdt-swap) |  |
+| C.파생·가격 | DVOL(BTC 내재변동성) | 35.79 | 37.31 |  | 2026-09-24 00:00 UTC | ok | [Deribit](https://www.deribit.com/statistics/BTC/volatility-index) |  |
+| C.파생·가격 | 옵션 25델타 스큐(풋IV−콜IV) | 1.56 | 1.06 | vol pt | 2026-09-24 00:46 UTC | ok | [Deribit](https://www.deribit.com/options/BTC) | 만기 2026-10-30, 콜 BTC-30OCT26-92000-C / 풋 BTC-30OCT26-79000-P. 양수면 하방 헤지 수요 우위 |
+| D.온체인 | MVRV Z-Score | 0.7689 | 0.7545 |  | 2026-09-17 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 0 이하 역사적 매수구간 / 7 이상 과열 |
+| D.온체인 | 단기보유자 MVRV | 1.07 | 1.07 |  | 2026-09-17 | ok | [BGeometrics](https://charts.bgeometrics.com/) |  |
+| D.온체인 | 단기보유자 실현가(STH-RP) | 78938.0 | 80764.0 | $ | 2026-09-17 | ok | [BGeometrics](https://charts.bgeometrics.com/) | 가격 ÷ STH-MVRV로 계산 (가격 84463.0$). 가격이 위면 강세 유지 |
+| D.온체인 | 거래소 BTC 유입 | 26788.5 | 39392.9 | BTC | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 BTC 유출 | 43695.3 | 43259.9 | BTC | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 순유입 7일 합 | -26444.8 | -4005.4 | BTC | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 순유입 7일 합 분포 위치 | 8.9 | 72.2 | 백분위 | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 최근 90일 분포 기준. 높을수록 매도 압력 |
+| D.온체인 | 거래소 BTC 순유입 | -16906.8 | -3867.0 | BTC | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) | 양수=매도 압력 / 음수=축적 |
+| D.온체인 | 거래소 보유량 30일 변화율 | -0.39 | 0.2 | % | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
+| D.온체인 | 거래소 BTC 보유량 | 2705076.0 | 2719494.0 | BTC | 2026-09-22 | ok | [Coin Metrics 커뮤니티](https://charts.coinmetrics.io/crypto-data/) |  |
 | D.온체인 | 채굴자→거래소 유입 |  |  |  |  | manual | [수동 확인](https://cryptoquant.com/asset/btc/chart/miner-flows) | 무료 소스 없음 → 수동 확인 목록 참고 |
 | D.온체인 | 고래비율(근사) |  |  |  |  | fail | [Arkham + Coin Metrics](https://intel.arkm.com/) | Arkham 키 없음 |
 
-## 지난밤 뉴스 (09-22 18:00 ~ 09-23 10:01 KST)
+## 지난밤 뉴스 (09-23 18:00 ~ 09-24 09:46 KST)
 
-피드 상태: CoinDesk: 14건 / The Block: 10건 / Cointelegraph: 15건 / 블록미디어: 10건
+피드 상태: CoinDesk: 13건 / The Block: 7건 / Cointelegraph: 17건 / 블록미디어: 10건
 
-- [Cointelegraph] CFTC issues warning over risky prediction market ‘mention’ contracts (09-23 09:18) — https://cointelegraph.com/news/cftc-issues-warning-over-risky-prediction-market-mention-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [블록미디어] [개장시황] 추석 앞둔 코스피, 반도체주 강세에 1%대 상승…7150선 출발 (09-23 09:17) — https://www.blockmedia.co.kr/archives/1143256?utm_source=general&utm_medium=rss
-- [CoinDesk] U.S. regulator warns about cheating risks in 'mention markets' on prediction platforms (09-23 09:00) — https://www.coindesk.com/policy/2026/09/22/u-s-regulator-warns-about-cheating-risks-in-mention-markets-on-prediction-platforms
-- [블록미디어] [코인시황] 비트코인 8만6000달러대 숨 고르기…ETF 자금 유입은 지속 (09-23 08:48) — https://www.blockmedia.co.kr/archives/1143243?utm_source=general&utm_medium=rss
-- [블록미디어] 메타 ‘뮤즈’ 등장에 월가 긴장…은행·보험·여행株 줄줄이 급락 (09-23 08:13) — https://www.blockmedia.co.kr/archives/1143224?utm_source=general&utm_medium=rss
-- [블록미디어] 비트코인 9만5000달러 향하나…317만달러 규모 ‘버터플라이’ 옵션 등장 (09-23 07:36) — https://www.blockmedia.co.kr/archives/1143215?utm_source=general&utm_medium=rss
-- [The Block] Crypto VC Hashed anchors new digital asset private credit fund targeting $300 million (09-23 07:30) — https://www.theblock.co/news/markets/2026-09-22-hashed-private-credit-fund-416013
-- [블록미디어] 美 백악관 “디지털자산 규제 더 못 기다려”…클래리티법 좌초에 행정부 주도 전환 (09-23 07:01) — https://www.blockmedia.co.kr/archives/1143210?utm_source=general&utm_medium=rss
-- [블록미디어] [뉴욕 금·채권·달러] 미 10년물 금리 5% 문턱서 주춤…달러, 장중 두 달 만의 최고 (09-23 06:47) — https://www.blockmedia.co.kr/archives/1143203?utm_source=general&utm_medium=rss
-- [The Block] CFTC warns ‘mention market’ prediction contracts carry heightened manipulation risk (09-23 06:42) — https://www.theblock.co/news/regulation/2026-09-22-cftc-advisory-mention-markets-manipulation-risk-416120
-- [블록미디어] 뉴욕 연은 “통화정책 수단 잘 작동”…美 국채 매입 재개 가능성 열어둬 (09-23 06:33) — https://www.blockmedia.co.kr/archives/1143193?utm_source=general&utm_medium=rss
-- [CoinDesk] Democrats 'chose visceral hatred for' Donald Trump over crypto Clarity Act, Lummis says (09-23 06:29) — https://www.coindesk.com/policy/2026/09/22/democrats-chose-visceral-hatred-for-donald-trump-over-crypto-clarity-act-lummis-says
-- [The Block] CFTC Chairman Selig says markets must prepare for ‘mass tokenization’ (09-23 06:08) — https://www.theblock.co/news/regulation/2026-09-22-cftc-selig-mass-tokenization-24-7-trading-416111
-- [블록미디어] 에이브 V4 예치금 한 달 새 두 배…11억6000만달러 돌파 (09-23 06:07) — https://www.blockmedia.co.kr/archives/1143188?utm_source=general&utm_medium=rss
-- [Cointelegraph] Arch Lending eyes tokenized stocks as next collateral market (09-23 06:06) — https://cointelegraph.com/news/arch-lending-eyes-tokenized-stocks-as-next-crypto-collateral-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [블록미디어] [뉴욕 코인시황] 비트코인 8.6만달러대 숨고르기…유가하락·알트코인 순환매 확산 (09-23 06:00) — https://www.blockmedia.co.kr/archives/1143186?utm_source=general&utm_medium=rss
-- [Cointelegraph] Republican senator calls for probe into US presidents’ sons, citing crypto ventures (09-23 05:57) — https://cointelegraph.com/news/us-senator-probe-donald-trump-hunter-biden-crypto-business?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [블록미디어] CME 선물 상장에 비트코인캐시 30% 급등…석 달 만에 300달러 돌파 (09-23 05:48) — https://www.blockmedia.co.kr/archives/1143183?utm_source=general&utm_medium=rss
-- [CoinDesk] Crypto market structure can't wait for shot at post-election Clarity Act surge: White House (09-23 05:31) — https://www.coindesk.com/policy/2026/09/22/crypto-market-structure-can-t-wait-for-shot-at-post-election-clarity-act-surge-white-house
-- [Cointelegraph] Here’s what happened in crypto today (09-23 05:03) — https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [Cointelegraph] Canada’s six largest banks explore tokenized Canadian dollar deposits (09-23 04:56) — https://cointelegraph.com/news/canada-six-largest-banks-explore-tokenized-canadian-dollar-deposits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [The Block] Coinbase, Circle shares positioned for crypto recovery as estimates stabilize: William Blair (09-23 03:44) — https://www.theblock.co/news/markets/2026-09-22-coinbase-circle-shares-positioned-crypto-recovery-estimates-stabilize-william-blair-416083
-- [CoinDesk] Canada's 'Big Six' banks to launch interbank tokenized deposit initiative (09-23 02:34) — https://www.coindesk.com/business/2026/09/22/canada-s-big-six-banks-unite-to-launch-interbank-tokenized-deposit-initiative
-- [Cointelegraph] Zcash gets first European ETP following US ETF launch (09-23 01:21) — https://cointelegraph.com/news/21shares-zcash-etp-europe-etherfi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [The Block] Solo GP Jed Breed raises $15 million for his second early-stage crypto fund (09-23 01:15) — https://www.theblock.co/news/deals/2026-09-22-jed-breed-vc-second-crypto-fund-416075
-- [Cointelegraph] Bitcoin price seeks $86K as new support after oil dips below $90 (09-23 01:01) — https://cointelegraph.com/markets/bitcoin-price-seeks-86k-as-new-support-after-oil-dips-below-90?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [Cointelegraph] CLARITY vote failure could stoke more crypto PAC spending in key races (09-23 00:55) — https://cointelegraph.com/news/failure-clarity-act-vote-us-lawmakers-2026-midterms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [Cointelegraph] ECB, EU cenbanks seek changes in MiCA’s minimum bank deposit for stablecoins (09-23 00:37) — https://cointelegraph.com/news/escb-new-stablecoin-liquidity-rules-bank-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [CoinDesk] Next for the U.S. SEC: Agency's chief crypto counsel illuminates path for custody (09-23 00:21) — https://www.coindesk.com/policy/2026/09/22/next-for-the-u-s-sec-agency-s-chief-crypto-counsel-illuminates-path-for-custody
-- [CoinDesk] European central banks push to expand stablecoin yield ban to crypto lending and staking (09-22 23:32) — https://www.coindesk.com/policy/2026/09/22/european-central-banks-push-to-expand-stablecoin-yield-ban-to-crypto-lending-and-staking
-- [The Block] Coinbase adds fixed-rate bitcoin-backed loans through Morpho Midnight (09-22 23:13) — https://www.theblock.co/news/defi/2026-09-22-coinbase-fixed-rate-bitcoin-loans-morpho-midnight-416050
-- [The Block] CME adds Bitcoin Cash and Uniswap futures as crypto derivatives push grows (09-22 22:56) — https://www.theblock.co/news/markets/2026-09-22-cme-adds-bitcoin-cash-and-uniswap-futures-as-crypto-derivatives-push-grows-416049
-- [Cointelegraph] Big Questions: Does Satoshi actually own 1.1 million Bitcoin? (09-22 22:30) — https://cointelegraph.com/magazine/big-questions-does-satoshi-actually-own-1-million-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [The Block] Binance takes $100 million Circle stake alongside five-year USDC deal (09-22 21:53) — https://www.theblock.co/news/business/2026-09-22-binance-takes-100-million-circle-stake-alongside-five-year-usdc-deal-416042
-- [CoinDesk] Bitcoin, ether perpetual volumes on Kalshi are dominated by an unusual, repetitive trade, data shows (09-22 21:32) — https://www.coindesk.com/markets/2026/09/21/bitcoin-ether-perpetual-volumes-on-kalshi-are-dominated-by-an-unusual-repetitive-trade-data-shows
-- [Cointelegraph] Binance takes $100M stake in Circle under expanded USDC deal (09-22 21:18) — https://cointelegraph.com/news/binance-stake-circle-expanded-usdc-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [CoinDesk] Why Payward-backed Reap is betting on non-USD stablecoins for 24/7 cross-border FX settlement (09-22 21:05) — https://www.coindesk.com/business/2026/09/22/visa-partner-reap-eyes-local-currency-stablecoins-in-several-countries-for-24-7-onchain-fx
-- [The Block] SoFi begins stablecoin settlement on Mastercard network for program expected to exceed $25 billion in annualized volume (09-22 21:00) — https://www.theblock.co/news/business/2026-09-22-sofi-begins-stablecoin-settlement-on-mastercard-network-for-program-expected-to-exceed-25-billion-in-annualized-volume-416035
-- [CoinDesk] A $3.2 million 'bitcoin butterfly' option trade bets on $95,000 by the end of October (09-22 20:35) — https://www.coindesk.com/daybook-us/2026/09/22/a-usd3-2-million-bitcoin-butterfly-option-trade-bets-on-usd95-000-by-the-end-of-october
-- [Cointelegraph] ECB to put its own money into tokenized securities via new Pontes DLT (09-22 20:29) — https://cointelegraph.com/news/ecb-money-tokenized-securities-pontes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [CoinDesk] Binance buys $100 million Circle stake in five-year USDC promotion deal (09-22 20:07) — https://www.coindesk.com/policy/2026/09/22/binance-buys-usd100-million-circle-stake-in-five-year-usdc-promotion-deal
-- [CoinDesk] Bitcoin recovers from Asian-session lows as falling oil price supports risk appetite (09-22 19:59) — https://www.coindesk.com/markets/2026/09/22/bitcoin-recovers-from-asian-session-lows-as-falling-oil-price-supports-risk-appetite
-- [The Block] Bernstein sees annual prediction market volumes hitting $10 trillion by 2035 as financial assets overtake sports (09-22 19:56) — https://www.theblock.co/news/business/2026-09-22-bernstein-sees-annual-prediction-market-volumes-hitting-10-trillion-by-2035-as-financial-assets-overtake-sports-416030
-- [CoinDesk] Live updates: Bitcoin trades near $86,000 as U.S. stocks post small gains (09-22 19:20) — https://www.coindesk.com/markets/2026/09/22/live-updates-oil-falls-as-iran-signals-possible-hormuz-reopening-bitcoin-holds-near-usd86-000
-- [CoinDesk] Binance probed by U.S. federal prosecutors for sanctions violations: Bloomberg (09-22 19:07) — https://www.coindesk.com/policy/2026/09/22/binance-probed-by-u-s-federal-prosecutors-for-sanctions-violations-bloomberg
-- [Cointelegraph] Crypto metric signals altseason as Bitcoin market-cap share stalls below 60% (09-22 19:00) — https://cointelegraph.com/markets/crypto-metric-signals-altseason-as-bitcoin-market-cap-share-stalls-below-60?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [Cointelegraph] Crypto market cap reclaims $3 trillion as Bitcoin, altcoins rally (09-22 18:58) — https://cointelegraph.com/markets/crypto-market-cap-3-trillion-bitcoin-altcoins-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
-- [CoinDesk] Animoca Brands delays IPO plans, suspends merger talks with Currenc (09-22 18:47) — https://www.coindesk.com/business/2026/09/22/animoca-brands-delays-ipo-plans-suspends-merger-talks-with-currenc
-- [Cointelegraph] White hats outrun Coldcard hackers in 52-Bitcoin evacuation (09-22 18:06) — https://cointelegraph.com/news/white-hats-coldcard-btc-exploit-galaxy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [블록미디어] [코인시황] 美 국채 쇼크에 비트코인 84K로 후퇴…미결제약정 급감이 보내는 신호 (09-24 09:25) — https://www.blockmedia.co.kr/archives/1143754?utm_source=general&utm_medium=rss
+- [블록미디어] 미국 채권시장 ‘발작’…금리 급등 도대체 왜? (09-24 08:29) — https://www.blockmedia.co.kr/archives/1143750?utm_source=general&utm_medium=rss
+- [블록미디어] [뉴욕 금·채권·달러] 미국 PMI 서프라이즈에 금리·달러 상승…금값 1.6% 하락 (09-24 06:56) — https://www.blockmedia.co.kr/archives/1143720?utm_source=general&utm_medium=rss
+- [Cointelegraph] Ex-SEC acting chair: Agency dropped crypto cases to avoid issues with credibility (09-24 06:47) — https://cointelegraph.com/news/sec-mark-uyeda-agency-dropped-crypto-cases?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [블록미디어] [뉴욕 코인시황] 비트코인 8만4000달러선 후퇴…미·이란 긴장에 금리·유가 부담 (09-24 06:10) — https://www.blockmedia.co.kr/archives/1143716?utm_source=general&utm_medium=rss
+- [Cointelegraph] Former Hack VC partner Hsin-Ju Chuang found dead at 37 (09-24 05:43) — https://cointelegraph.com/news/former-hack-vc-partner-hsin-ju-chuang-found-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] US lawmakers from gaming states urge SCOTUS to take up Kalshi case (09-24 05:28) — https://cointelegraph.com/news/us-lawmakers-gaming-states-supreme-court-kalshi-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [블록미디어] [뉴욕증시 마감] 미 국채금리 상승에…나스닥 하루 만에 ‘차익실현 찬물’ (09-24 05:13) — https://www.blockmedia.co.kr/archives/1143708?utm_source=general&utm_medium=rss
+- [Cointelegraph] Here’s what happened in crypto today (09-24 04:39) — https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] Trump reveals up to $100K Strategy stock purchase in ethics filing (09-24 04:05) — https://cointelegraph.com/news/trump-discloses-up-to-100k-strategy-stock-purchase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [CoinDesk] Kalshi says it is not being investigated by the CFTC over trading activity (09-24 04:04) — https://www.coindesk.com/markets/2026/09/23/kalshi-says-it-is-not-being-investigated-by-the-cftc-over-trading-activity
+- [블록미디어] “AI 결제는 스테이블코인”… BTC 선호도 20%로 뚝 (09-24 04:04) — https://www.blockmedia.co.kr/archives/1143701?utm_source=general&utm_medium=rss
+- [CoinDesk] Former Hack VC partner Hsin-Ju Chuang found dead following public dispute with the firm (09-24 03:59) — https://www.coindesk.com/business/2026/09/23/former-hack-vc-partner-hsin-ju-chuang-found-dead-following-public-dispute-with-firm
+- [블록미디어] 보수 팟캐스트서 외면받는 트럼프… 언급 70% 감소-WSJ (09-24 03:47) — https://www.blockmedia.co.kr/archives/1143697?utm_source=general&utm_medium=rss
+- [블록미디어] AI 데이터센터 역풍…680억달러 프로젝트 차질 (09-24 03:26) — https://www.blockmedia.co.kr/archives/1143695?utm_source=general&utm_medium=rss
+- [Cointelegraph] US stablecoin adoption could surge with bank-like protections: Visa survey (09-24 03:17) — https://cointelegraph.com/news/stablecoin-adoption-bank-level-protections-visa?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [블록미디어] 골드만, 연준 연내 금리 인상 한 번 더…브렌트유 85달러 전망 (09-24 03:08) — https://www.blockmedia.co.kr/archives/1143691?utm_source=general&utm_medium=rss
+- [CoinDesk] White House adviser defends President Trump's crypto ties in wake of Clarity Act defeat (09-24 03:04) — https://www.coindesk.com/policy/2026/09/23/white-house-adviser-defends-president-trump-s-crypto-ties-in-wake-of-clarity-act-defeat
+- [The Block] Hut 8 wins bidding for Poolin’s Texas data centers with $140 million offer (09-24 03:01) — https://www.theblock.co/news/business/2026-09-23-hut-8-wins-bidding-poolin-texas-data-centers-140-million-offer-416190
+- [블록미디어] 디지털자산 시총 50% 급감에도 경제활동 1.6% 감소 (09-24 02:56) — https://www.blockmedia.co.kr/archives/1143685?utm_source=general&utm_medium=rss
+- [The Block] ‘Not behind closed doors’: Senate Banking Democrats call for prediction markets hearing as GOP meets privately with Kalshi (09-24 02:36) — https://www.theblock.co/news/regulation/2026-09-23-senate-banking-democrats-prediction-markets-hearing-kalshi-416193
+- [The Block] ‘BTC still has room to catch up’: Bitcoin’s $80,000 breakout draws institutional demand as analysts weigh durability (09-24 01:52) — https://www.theblock.co/news/markets/2026-09-23-bitcoin-breakout-etf-inflows-analysts-k33-nexo-resistance-416182
+- [Cointelegraph] Bitwise launches first Lighter ETP amid Hyperliquid rivalry (09-24 01:34) — https://cointelegraph.com/news/bitwise-lighter-lit-etp-europe-xetra?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] NYSE, Blockchain.com in tie-up to bring tokenized US stocks to crypto users (09-24 00:56) — https://cointelegraph.com/news/nyse-blockchaincom-team-up-to-bring-tokenized-us-stocks-to-crypto-users?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [The Block] Blockchain.com, NYSE plan access to tokenized US stocks and ETFs (09-24 00:36) — https://www.theblock.co/news/web3/2026-09-23-blockchain-com-nyse-tokenized-us-stocks-etfs-416176
+- [CoinDesk] Inside the FBI’s little-known annual crypto crime gathering (09-24 00:26) — https://www.coindesk.com/business/2026/09/23/inside-the-fbi-s-little-known-annual-crypto-crime-gathering
+- [CoinDesk] Crypto Long & Short: Inside the chain settling $150 billion of stablecoins a week (09-24 00:07) — https://www.coindesk.com/coindesk-indices/2026/09/23/crypto-long-and-short-inside-the-chain-settling-usd150-billion-of-stablecoins-a-week
+- [Cointelegraph] Bitcoin long liquidations hit $280M as BTC price dips under $84K (09-23 23:52) — https://cointelegraph.com/markets/bitcoin-long-liquidations-hit-280m-as-btc-price-dips-under-84k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] Raiffeisen to offer crypto trading across 11 European markets via Bitpanda (09-23 23:28) — https://cointelegraph.com/news/raiffeisen-crypto-11-european-markets-bitpanda?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] ESMA to prioritize EU-wide AI and tokenization supervision in 2027 (09-23 22:40) — https://cointelegraph.com/news/esma-to-focus-eu-wide-supervision-on-ai-and-tokenization-from-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] Winners and losers of the SEC’s new tokenized stocks rules (09-23 22:30) — https://cointelegraph.com/magazine/winners-and-losers-of-the-secs-new-tokenized-stocks-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [CoinDesk] Bitcoin's $16 billion quarterly options settlement arrives with a 'call-heavy' book (09-23 22:02) — https://www.coindesk.com/markets/2026/09/23/bitcoin-s-usd16-billion-quarterly-options-settlement-arrives-with-a-call-heavy-book
+- [CoinDesk] MoonPay to acquire SEC-registered North Capital in $60 million all-stock deal (09-23 22:00) — https://www.coindesk.com/business/2026/09/23/moonpay-to-acquire-sec-registered-north-capital-in-usd60-million-all-stock-deal
+- [The Block] Stablecoin adoption intent rises from 36% to 56% with bank-level protections, Visa says (09-23 22:00) — https://www.theblock.co/news/regulation/2026-09-23-stablecoin-adoption-intent-rises-from-36-to-56-with-bank-level-protections-visa-says-416136
+- [The Block] Crypto economy fell just 1.6% in 12 months despite $2.1 trillion market cap rout, Chainalysis says (09-23 22:00) — https://www.theblock.co/news/ecosystems/2026-09-23-crypto-economy-fell-just-1-6-in-12-months-despite-2-1-trillion-market-cap-rout-chainalysis-says-416150
+- [Cointelegraph] MoonPay to buy North Capital in all-stock deal worth over $60M (09-23 22:00) — https://cointelegraph.com/news/moonpay-north-capital-acquisition?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] Stablecoin cross-border flows surge 78%, defying crypto bear market (09-23 22:00) — https://cointelegraph.com/news/stablecoin-cross-border-flows-surge-78-defying-crypto-bear-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] EU watchdogs warn quantum computers could pick crypto’s locks (09-23 21:22) — https://cointelegraph.com/news/eu-watchdogs-quantum-computers-crypto-locks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [The Block] Galaxy adds $100 million in Sky’s sUSDS to treasury, buys SKY token as firms deepen lending ties (09-23 21:00) — https://www.theblock.co/news/business/2026-09-23-galaxy-adds-100-million-in-skys-susds-to-treasury-buys-sky-token-as-firms-deepen-lending-ties-416137
+- [CoinDesk] Live updates: Bitcoin pulls back to $84,000 as bond yields fly higher (09-23 20:29) — https://www.coindesk.com/business/2026/09/23/live-updates-bitcoin-slips-under-usd86-000-as-money-rotates-into-bch-and-zec
+- [CoinDesk] The S&P 500 has a 'breadth' problem. Crypto doesn’t. (09-23 20:28) — https://www.coindesk.com/daybook-us/2026/09/23/the-s-and-p-500-has-a-breadth-problem-crypto-doesn-t
+- [CoinDesk] Bitcoin consolidates near $86,000 as rally narrows and Brent slips below $100 (09-23 19:28) — https://www.coindesk.com/markets/2026/09/23/bitcoin-consolidates-near-usd86-000-as-rally-narrows-and-brent-slips-below-usd100
+- [CoinDesk] BitMEX shuts down: perpetuals pioneer officially closes it doors after 11 years (09-23 19:24) — https://www.coindesk.com/business/2026/09/23/bitmex-shuts-down-trading-after-11-years-leaves-withdrawals-open
+- [Cointelegraph] CFTC chair pushes tokenization as SEC opens door to onchain stocks (09-23 19:06) — https://cointelegraph.com/news/cftc-selig-mass-tokenization-sec-onchain-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [Cointelegraph] Bitcoin bull market ‘confirmed’ but $90K presents profit-taking risk: Analysis (09-23 19:05) — https://cointelegraph.com/markets/bitcoin-bull-market-confirmed-but-90k-presents-profit-taking-risk-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+- [CoinDesk] FTX, Alameda-linked wallets send $75 million in ether to Wintermute, onchain data shows (09-23 18:57) — https://www.coindesk.com/business/2026/09/23/ftx-alameda-linked-wallets-send-usd75-million-in-ether-to-wintermute-onchain-data-shows
+- [CoinDesk] BlackRock says AI agents could drive stablecoin and crypto adoption (09-23 18:17) — https://www.coindesk.com/markets/2026/09/23/ai-agents-will-soon-buy-their-own-computing-power-and-data-using-stablecoins-according-to-blackrock
 
 ## 전문가 코멘트 (최근 7일, RSS)
 
