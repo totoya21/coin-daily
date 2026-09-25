@@ -1,0 +1,1327 @@
+{
+ "run_at": "2026-09-25 09:45 KST",
+ "indicators": [
+  {
+   "group": "A.매크로",
+   "key": "nasdaq",
+   "name": "나스닥 종합지수",
+   "value": 26939.373,
+   "prev": 26936.039,
+   "unit": "pt",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:^IXIC",
+   "view_url": "https://finance.yahoo.com/quote/%5EIXIC",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "nasdaq_5d_pct",
+   "name": "나스닥 5거래일 변화율",
+   "value": 3.7,
+   "prev": "3.67",
+   "unit": "%",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:^IXIC",
+   "view_url": "https://finance.yahoo.com/quote/%5EIXIC",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "nasdaq_ma50",
+   "name": "나스닥 50일 이평",
+   "value": 26126.29,
+   "prev": "26109.64",
+   "unit": "pt",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:^IXIC",
+   "view_url": "https://finance.yahoo.com/quote/%5EIXIC",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": "종가가 이평 위면 추세 양호"
+  },
+  {
+   "group": "A.매크로",
+   "key": "dxy",
+   "name": "달러인덱스(DXY)",
+   "value": 101.292,
+   "prev": 101.1,
+   "unit": "pt",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:DX-Y.NYB",
+   "view_url": "https://finance.yahoo.com/quote/DX-Y.NYB",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "dxy_20d_pct",
+   "name": "DXY 20거래일 변화율",
+   "value": 2.4,
+   "prev": "2.17",
+   "unit": "%",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:DX-Y.NYB",
+   "view_url": "https://finance.yahoo.com/quote/DX-Y.NYB",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "usdjpy",
+   "name": "USD/JPY",
+   "value": 158.729,
+   "prev": 158.265,
+   "unit": "엔",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:JPY=X",
+   "view_url": "https://finance.yahoo.com/quote/JPY%3DX",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "usdjpy_5d_pct",
+   "name": "USD/JPY 5거래일 변화율",
+   "value": 1.67,
+   "prev": "1.44",
+   "unit": "%",
+   "source": "Yahoo Finance",
+   "api_url": "yfinance:JPY=X",
+   "view_url": "https://finance.yahoo.com/quote/JPY%3DX",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "A.매크로",
+   "key": "cpi_yoy",
+   "name": "CPI 전년비",
+   "value": 3.71,
+   "prev": 3.54,
+   "unit": "%",
+   "source": "FRED",
+   "api_url": "https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key=***&file_type=json&sort_order=desc&limit=24",
+   "view_url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+   "data_as_of": "2026-08-01",
+   "status": "ok",
+   "note": "FRED 갱신일 2026-09-11 (발표 후 30일 이내)"
+  },
+  {
+   "group": "A.매크로",
+   "key": "core_cpi_yoy",
+   "name": "근원 CPI 전년비",
+   "value": 2.76,
+   "prev": 2.79,
+   "unit": "%",
+   "source": "FRED",
+   "api_url": "https://api.stlouisfed.org/fred/series/observations?series_id=CPILFESL&api_key=***&file_type=json&sort_order=desc&limit=24",
+   "view_url": "https://fred.stlouisfed.org/series/CPILFESL",
+   "data_as_of": "2026-08-01",
+   "status": "ok",
+   "note": "FRED 갱신일 2026-09-11 (발표 후 30일 이내)"
+  },
+  {
+   "group": "A.매크로",
+   "key": "pce_yoy",
+   "name": "PCE 전년비",
+   "value": 3.7,
+   "prev": 3.72,
+   "unit": "%",
+   "source": "FRED",
+   "api_url": "https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=***&file_type=json&sort_order=desc&limit=24",
+   "view_url": "https://fred.stlouisfed.org/series/PCEPI",
+   "data_as_of": "2026-07-01",
+   "status": "ok",
+   "note": "FRED 갱신일 2026-08-26 (발표 후 30일 이내)"
+  },
+  {
+   "group": "A.매크로",
+   "key": "core_pce_yoy",
+   "name": "근원 PCE 전년비",
+   "value": 3.34,
+   "prev": 3.34,
+   "unit": "%",
+   "source": "FRED",
+   "api_url": "https://api.stlouisfed.org/fred/series/observations?series_id=PCEPILFE&api_key=***&file_type=json&sort_order=desc&limit=24",
+   "view_url": "https://fred.stlouisfed.org/series/PCEPILFE",
+   "data_as_of": "2026-07-01",
+   "status": "ok",
+   "note": "FRED 갱신일 2026-08-26 (발표 후 30일 이내)"
+  },
+  {
+   "group": "A.매크로",
+   "key": "infl_signal",
+   "name": "인플레이션 방향 합계",
+   "value": -1,
+   "prev": "-1",
+   "unit": "",
+   "source": "FRED",
+   "api_url": "",
+   "view_url": "https://fred.stlouisfed.org/",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "btc_close",
+   "name": "BTC 일봉 종가",
+   "value": 84385.46,
+   "prev": 84378.31,
+   "unit": "USD",
+   "source": "Coinbase 현물",
+   "api_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400",
+   "view_url": "https://www.coinbase.com/price/bitcoin",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "rsi14",
+   "name": "RSI(14, 일봉)",
+   "value": 65.43,
+   "prev": 65.42,
+   "unit": "",
+   "source": "Coinbase 현물",
+   "api_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400",
+   "view_url": "https://www.coinbase.com/price/bitcoin",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": "70↑ 과매수 / 30↓ 과매도"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "price_7d_pct",
+   "name": "BTC 7일 가격 변화율",
+   "value": 10.53,
+   "prev": "10.81",
+   "unit": "%",
+   "source": "Coinbase 현물",
+   "api_url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400",
+   "view_url": "https://www.coinbase.com/price/bitcoin",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "oi",
+   "name": "선물 미결제약정(OI)",
+   "value": 3.17,
+   "prev": 3.34,
+   "unit": "십억$",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/rubik/stat/contracts/open-interest-volume?ccy=BTC&period=1D",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "oi_7d_pct",
+   "name": "OI 7일 변화율",
+   "value": 8.86,
+   "prev": "17.51",
+   "unit": "%",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/rubik/stat/contracts/open-interest-volume?ccy=BTC&period=1D",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": "달러 기준 OI라 가격 변동이 섞여 있음"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "ls_account",
+   "name": "롱/숏 계정비율",
+   "value": 1.24,
+   "prev": 1.26,
+   "unit": "배",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio?ccy=BTC&period=1D",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": "1 초과면 롱 우위"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "ls_account_pct",
+   "name": "롱/숏 계정비율 분포 위치",
+   "value": 56.7,
+   "prev": "60.0",
+   "unit": "백분위",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio?ccy=BTC&period=1D",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-24",
+   "status": "ok",
+   "note": "OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "funding",
+   "name": "펀딩비(최근 1회)",
+   "value": -0.0004,
+   "prev": -0.0003,
+   "unit": "%",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&limit=6",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-25 00:00 UTC",
+   "status": "ok",
+   "note": "0.05%↑ 과열"
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "funding_avg3",
+   "name": "펀딩비 최근 3회 평균",
+   "value": 0.0007,
+   "prev": "0.0045",
+   "unit": "%",
+   "source": "OKX 선물",
+   "api_url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&limit=6",
+   "view_url": "https://www.okx.com/trade-swap/btc-usdt-swap",
+   "data_as_of": "2026-09-25 00:00 UTC",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "dvol",
+   "name": "DVOL(BTC 내재변동성)",
+   "value": 36.02,
+   "prev": 35.81,
+   "unit": "",
+   "source": "Deribit",
+   "api_url": "https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=BTC&start_timestamp=1790037933469&end_timestamp=1790297133469&resolution=3600",
+   "view_url": "https://www.deribit.com/statistics/BTC/volatility-index",
+   "data_as_of": "2026-09-25 00:00 UTC",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "C.파생·가격",
+   "key": "skew25",
+   "name": "옵션 25델타 스큐(풋IV−콜IV)",
+   "value": 1.12,
+   "prev": "1.56",
+   "unit": "vol pt",
+   "source": "Deribit",
+   "api_url": "https://www.deribit.com/api/v2/public/get_instruments?currency=BTC&kind=option&expired=false",
+   "view_url": "https://www.deribit.com/options/BTC",
+   "data_as_of": "2026-09-25 00:45 UTC",
+   "status": "ok",
+   "note": "만기 2026-10-30, 콜 BTC-30OCT26-92000-C / 풋 BTC-30OCT26-79000-P. 양수면 하방 헤지 수요 우위"
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "usdt_d",
+   "name": "테더 도미넌스",
+   "value": 6.334,
+   "prev": "6.368",
+   "unit": "%",
+   "source": "CoinGecko",
+   "api_url": "https://api.coingecko.com/api/v3/global",
+   "view_url": "https://www.coingecko.com/en/global-charts",
+   "data_as_of": "2026-09-25 00:45 UTC",
+   "status": "ok",
+   "note": "상승=위험회피 / TradingView USDT.D와 계산 방식 다름"
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "total_mcap",
+   "name": "전체 시가총액(TOTAL)",
+   "value": 2.8957,
+   "prev": "2.875",
+   "unit": "조$",
+   "source": "CoinGecko",
+   "api_url": "https://api.coingecko.com/api/v3/global",
+   "view_url": "https://www.coingecko.com/en/global-charts",
+   "data_as_of": "2026-09-25 00:45 UTC",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "etf_total",
+   "name": "BTC 현물 ETF 순유입(전체)",
+   "value": 347.0,
+   "prev": 714.7,
+   "unit": "백만$",
+   "source": "TFTC (SoSoValue·Farside 집계)",
+   "api_url": "https://www.tftc.io/bitcoin-etf-flows/data.json",
+   "view_url": "https://www.tftc.io/bitcoin-etf-flows",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": "5거래일 연속 순유입 / 집계 기준일 2026-09-23"
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "etf_ibit",
+   "name": "IBIT(블랙록) 순유입",
+   "value": 166.3,
+   "prev": 350.3,
+   "unit": "백만$",
+   "source": "TFTC (SoSoValue·Farside 집계)",
+   "api_url": "https://www.tftc.io/bitcoin-etf-flows/data.json",
+   "view_url": "https://www.tftc.io/bitcoin-etf-flows",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "etf_5d_sum",
+   "name": "ETF 5거래일 순유입 합계",
+   "value": 2653.2,
+   "prev": "2010.2",
+   "unit": "백만$",
+   "source": "TFTC (SoSoValue·Farside 집계)",
+   "api_url": "https://www.tftc.io/bitcoin-etf-flows/data.json",
+   "view_url": "https://www.tftc.io/bitcoin-etf-flows",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "B.자금흐름",
+   "key": "etf_streak",
+   "name": "ETF 연속일수(+유입/−유출)",
+   "value": 5,
+   "prev": "4",
+   "unit": "일",
+   "source": "TFTC (SoSoValue·Farside 집계)",
+   "api_url": "https://www.tftc.io/bitcoin-etf-flows/data.json",
+   "view_url": "https://www.tftc.io/bitcoin-etf-flows",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "mvrv_z",
+   "name": "MVRV Z-Score",
+   "value": 0.78,
+   "prev": "0.7689",
+   "unit": "",
+   "source": "BGeometrics",
+   "api_url": "https://bitcoin-data.com/v1/mvrv-zscore/last",
+   "view_url": "https://charts.bgeometrics.com/",
+   "data_as_of": "2026-09-18",
+   "status": "ok",
+   "note": "0 이하 역사적 매수구간 / 7 이상 과열"
+  },
+  {
+   "group": "D.온체인",
+   "key": "sth_mvrv",
+   "name": "단기보유자 MVRV",
+   "value": 1.13,
+   "prev": "1.07",
+   "unit": "",
+   "source": "BGeometrics",
+   "api_url": "https://bitcoin-data.com/v1/sth-mvrv/last",
+   "view_url": "https://charts.bgeometrics.com/",
+   "data_as_of": "2026-09-18",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "sth_rp",
+   "name": "단기보유자 실현가(STH-RP)",
+   "value": 74640.0,
+   "prev": "78938.0",
+   "unit": "$",
+   "source": "BGeometrics",
+   "api_url": "https://bitcoin-data.com/v1/sth-mvrv/last",
+   "view_url": "https://charts.bgeometrics.com/",
+   "data_as_of": "2026-09-18",
+   "status": "ok",
+   "note": "가격 ÷ STH-MVRV로 계산 (가격 84344.0$). 가격이 위면 강세 유지"
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_in_btc",
+   "name": "거래소 BTC 유입",
+   "value": 22387.6,
+   "prev": 26788.5,
+   "unit": "BTC",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExNtv&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_out_btc",
+   "name": "거래소 BTC 유출",
+   "value": 32444.5,
+   "prev": 43695.3,
+   "unit": "BTC",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowOutExNtv&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_net_7d",
+   "name": "거래소 순유입 7일 합",
+   "value": -34394.8,
+   "prev": "-26444.8",
+   "unit": "BTC",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExUSD&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_net_7d_pct",
+   "name": "거래소 순유입 7일 합 분포 위치",
+   "value": 6.7,
+   "prev": "8.9",
+   "unit": "백분위",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExUSD&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": "최근 90일 분포 기준. 높을수록 매도 압력"
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_net_btc",
+   "name": "거래소 BTC 순유입",
+   "value": -10056.9,
+   "prev": "-16906.8",
+   "unit": "BTC",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExNtv&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": "양수=매도 압력 / 음수=축적"
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_supply_30d_pct",
+   "name": "거래소 보유량 30일 변화율",
+   "value": -0.45,
+   "prev": "-0.39",
+   "unit": "%",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyExNtv&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "ex_supply",
+   "name": "거래소 BTC 보유량",
+   "value": 2695209.0,
+   "prev": 2705076.0,
+   "unit": "BTC",
+   "source": "Coin Metrics 커뮤니티",
+   "api_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyExNtv&frequency=1d&page_size=130&paging_from=end",
+   "view_url": "https://charts.coinmetrics.io/crypto-data/",
+   "data_as_of": "2026-09-23",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "D.온체인",
+   "key": "miner_to_ex",
+   "name": "채굴자→거래소 유입",
+   "value": null,
+   "prev": null,
+   "unit": "",
+   "source": "수동 확인",
+   "api_url": "",
+   "view_url": "https://cryptoquant.com/asset/btc/chart/miner-flows",
+   "data_as_of": "",
+   "status": "manual",
+   "note": "무료 소스 없음 → 수동 확인 목록 참고"
+  },
+  {
+   "group": "D.온체인",
+   "key": "whale_ratio_proxy",
+   "name": "고래비율(근사)",
+   "value": null,
+   "prev": null,
+   "unit": "",
+   "source": "Arkham + Coin Metrics",
+   "api_url": "",
+   "view_url": "https://intel.arkm.com/",
+   "data_as_of": "",
+   "status": "fail",
+   "note": "Arkham 키 없음"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_mvrv_z",
+   "name": "점수: MVRV Z",
+   "value": 1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "MVRV Z 0.78"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_sth",
+   "name": "점수: 가격÷STH-RP",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "가격÷STH-RP 1.130"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_etf",
+   "name": "점수: 현물 ETF 순유입",
+   "value": 2,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "5거래일 연속 순유입"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_ex_net",
+   "name": "점수: 거래소 순유입(7일)",
+   "value": 2,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "7일 순유입 분포 7백분위"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_ex_supply",
+   "name": "점수: 거래소 보유량(30일)",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "30일 -0.45% (±0.5% 미만은 0점)"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_whale",
+   "name": "점수: 고래비율(근사)",
+   "value": null,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "fail",
+   "note": "값 없음"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_usdt_d",
+   "name": "점수: 테더 도미넌스(7일)",
+   "value": null,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "fail",
+   "note": "7일 전 값 없음"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_funding",
+   "name": "점수: 펀딩비",
+   "value": 1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "3회 평균 0.0007%"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_rsi",
+   "name": "점수: RSI(14)",
+   "value": -1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "RSI 65.4"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_ls",
+   "name": "점수: 롱/숏 비율",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "롱/숏 분포 57백분위"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_oi",
+   "name": "점수: 미결제약정(OI)",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "OI 7일 +8.9%, 가격 +10.5%"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_skew",
+   "name": "점수: 옵션 스큐",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "+1.12"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_nasdaq",
+   "name": "점수: 나스닥",
+   "value": 1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "50일선 위"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_dxy",
+   "name": "점수: DXY",
+   "value": -1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "101.29, 20일 +2.4% (상승)"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_usdjpy",
+   "name": "점수: USD/JPY",
+   "value": 0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "158.73"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_infl",
+   "name": "점수: CPI·PCE",
+   "value": -1,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": "둔화−재가속 합계 -1"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_ind_fomc",
+   "name": "점수: 폴리마켓 금리인하",
+   "value": null,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "fail",
+   "note": "FOMC 마켓 미설정 또는 값 없음"
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_group_밸류에이션",
+   "name": "그룹 점수: 밸류에이션",
+   "value": 25.0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_group_수급",
+   "name": "그룹 점수: 수급",
+   "value": 66.7,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_group_파생·심리",
+   "name": "그룹 점수: 파생·심리",
+   "value": 0.0,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_group_매크로",
+   "name": "그룹 점수: 매크로",
+   "value": -12.5,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_total",
+   "name": "총점",
+   "value": 24.4,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_avg3",
+   "name": "3일 평균 총점",
+   "value": 19.4,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "score_coverage",
+   "name": "판정 가능 비율",
+   "value": 82.4,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "judgment_raw",
+   "name": "오늘 구간",
+   "value": "중립",
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "judgment",
+   "name": "판정",
+   "value": "중립",
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "group": "Z.점수",
+   "key": "target",
+   "name": "BTC 목표 비중(%)",
+   "value": 60,
+   "prev": null,
+   "unit": "",
+   "source": "점수 계산(coin_daily)",
+   "api_url": "",
+   "view_url": "",
+   "data_as_of": "2026-09-25",
+   "status": "ok",
+   "note": ""
+  }
+ ],
+ "news": [
+  {
+   "source": "블록미디어",
+   "title": "테더, 거래은행 청산 위기에 자금 묶여…최대 900억원",
+   "link": "https://www.blockmedia.co.kr/archives/1144109?utm_source=general&utm_medium=rss",
+   "time": "09-25 09:40"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Bitget CEO suspects North Korea behind $352M hack, citing IP clues",
+   "link": "https://cointelegraph.com/news/bitget-ceo-suspects-north-korea-behind-352m-hack-citing-ip-clues?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 09:32"
+  },
+  {
+   "source": "블록미디어",
+   "title": "[코인시황] 비트코인, 美 국채금리 급등에 주춤…8만4000달러대 보합",
+   "link": "https://www.blockmedia.co.kr/archives/1144097?utm_source=general&utm_medium=rss",
+   "time": "09-25 09:13"
+  },
+  {
+   "source": "블록미디어",
+   "title": "고유가에 채권시장 발작…WSJ “장기금리까지 뛸 이유 있나”",
+   "link": "https://www.blockmedia.co.kr/archives/1144088?utm_source=general&utm_medium=rss",
+   "time": "09-25 08:57"
+  },
+  {
+   "source": "블록미디어",
+   "title": "메타, 약세장서 4.5% 상승…‘뮤즈’가 AI 투자 우려 잠재웠다",
+   "link": "https://www.blockmedia.co.kr/archives/1144085?utm_source=general&utm_medium=rss",
+   "time": "09-25 08:38"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Asia dominates Crypto Adoption Index, Bitget’s $351M hack: Asia Express",
+   "link": "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 08:27"
+  },
+  {
+   "source": "블록미디어",
+   "title": "“美 국채 바이백도 소용없다” …채권 투매 확산",
+   "link": "https://www.blockmedia.co.kr/archives/1144076?utm_source=general&utm_medium=rss",
+   "time": "09-25 08:10"
+  },
+  {
+   "source": "블록미디어",
+   "title": "뉴욕주 “폴리마켓, 불법 도박 운영” 소송 제기",
+   "link": "https://www.blockmedia.co.kr/archives/1144069?utm_source=general&utm_medium=rss",
+   "time": "09-25 07:59"
+  },
+  {
+   "source": "블록미디어",
+   "title": "비트겟 “핫월렛 해킹 의심, 3.5억달러 무단 이동…출금 중단”",
+   "link": "https://www.blockmedia.co.kr/archives/1144068?utm_source=general&utm_medium=rss",
+   "time": "09-25 07:48"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "New York sues Polymarket, alleging it is running an illegal gambling operation",
+   "link": "https://www.coindesk.com/policy/2026/09/24/new-york-sues-polymarket-alleging-it-is-running-an-illegal-gambling-operation",
+   "time": "09-25 07:41"
+  },
+  {
+   "source": "블록미디어",
+   "title": "美 연준, 스테이블코인 발행 규칙 제안…국채 등 준비자산 의무화",
+   "link": "https://www.blockmedia.co.kr/archives/1144065?utm_source=general&utm_medium=rss",
+   "time": "09-25 07:32"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "U.S. Federal Reserve moves on proposals to implement GENIUS Act for stablecoins",
+   "link": "https://www.coindesk.com/policy/2026/09/24/u-s-federal-reserve-moves-on-proposals-to-implement-genius-act-for-stablecoins",
+   "time": "09-25 07:28"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Fed proposes new capital, redemption rules for stablecoin issuers",
+   "link": "https://cointelegraph.com/news/fed-proposes-new-capital-redemption-rules-for-stablecoin-issuers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 07:10"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
+   "link": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
+   "time": "09-25 06:59"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Bitget confirms $352M security breach, suspends withdrawals",
+   "link": "https://cointelegraph.com/news/bitget-calls-security-withdrawal-claims-unverified-amid-178m-breach-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 06:47"
+  },
+  {
+   "source": "블록미디어",
+   "title": "[뉴욕 금·채권·달러] 미 국채금리 급등·달러 강세…금값은 4265달러로 하락",
+   "link": "https://www.blockmedia.co.kr/archives/1144057?utm_source=general&utm_medium=rss",
+   "time": "09-25 06:44"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "CFTC updates guidance on tokenized assets, blockchain records after failed vote",
+   "link": "https://cointelegraph.com/news/cftc-digital-assets-regulation-failed-clarity-vote?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 06:42"
+  },
+  {
+   "source": "The Block",
+   "title": "More than $170 million in crypto moves from Bitget wallets to unidentified address",
+   "link": "https://www.theblock.co/news/markets/2026-09-24-more-than-170-million-in-crypto-moves-from-bitget-wallets-unidentified-address-416345",
+   "time": "09-25 06:20"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Bitcoin price steadies, ONDO rallies as US Treasury yields hit 2007 highs",
+   "link": "https://cointelegraph.com/markets/bitcoin-steadies-ondo-rallies-us-treasury-yields-hit-2007-highs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 05:32"
+  },
+  {
+   "source": "The Block",
+   "title": "Fed proposes reserve limits, capital standards for stablecoin issuers under GENIUS Act",
+   "link": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
+   "time": "09-25 05:19"
+  },
+  {
+   "source": "블록미디어",
+   "title": "[뉴욕증시 마감] 미·이란 협상소식에 반등…고금리에 ‘증시 혼조’",
+   "link": "https://www.blockmedia.co.kr/archives/1144043?utm_source=general&utm_medium=rss",
+   "time": "09-25 05:14"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Someone was trying to sell Ondo Finance after founder Nathan Allman's death",
+   "link": "https://www.coindesk.com/business/2026/09/23/someone-was-trying-to-sell-ondo-finance-after-founder-nathan-allman-s-death",
+   "time": "09-25 05:13"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Bullish, Alpaca and Apex Fintech form coalition to push issuer-backed tokenized stocks",
+   "link": "https://www.coindesk.com/business/2026/09/24/bullish-alpaca-and-apex-fintech-form-coalition-to-push-issuer-backed-tokenized-stocks",
+   "time": "09-25 05:05"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "U.S. commodities firms can invest in tokenized assets, use blockchain records: CFTC",
+   "link": "https://www.coindesk.com/policy/2026/09/24/u-s-commodities-firms-can-invest-in-tokenized-assets-use-blockchain-records-cftc",
+   "time": "09-25 05:04"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "DoubleZero brings dedicated fiber market data to Hyperliquid traders",
+   "link": "https://cointelegraph.com/news/doublezero-brings-dedicated-fiber-market-data-hyperliquid-traders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 05:04"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "The stock token debate, and the gap nobody can close alone",
+   "link": "https://www.coindesk.com/opinion/2026/09/24/the-stock-token-debate-and-the-gap-nobody-can-close-alone",
+   "time": "09-25 05:03"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Here’s what happened in crypto today",
+   "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 04:50"
+  },
+  {
+   "source": "The Block",
+   "title": "Solana treasury firm SkyAI keeps board after shareholder protest, loses equity plan vote",
+   "link": "https://www.theblock.co/news/business/2026-09-24-solana-treasury-skyai-keeps-board-shareholder-protest-loses-equity-plan-vote-416298",
+   "time": "09-25 04:17"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Bitcoin just topped a key long-term moving average. Here's what it might mean",
+   "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-just-topped-a-key-long-term-moving-average-here-s-what-it-might-mean",
+   "time": "09-25 03:46"
+  },
+  {
+   "source": "The Block",
+   "title": "ARK Invest brings $1.3 billion venture fund onchain through Securitize",
+   "link": "https://www.theblock.co/news/markets/2026-09-24-ark-invest-tokenizes-arkvx-venture-fund-securitize-416294",
+   "time": "09-25 03:37"
+  },
+  {
+   "source": "The Block",
+   "title": "JPMorgan says bitcoin crossing $85,000 production cost could ease miner selling pressure",
+   "link": "https://www.theblock.co/news/markets/2026-09-24-jpmorgan-bitcoin-production-cost-miners-relief-416283",
+   "time": "09-25 03:22"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Crypto treasury model loses its edge as stock premiums fade: DWF",
+   "link": "https://cointelegraph.com/news/crypto-treasury-firms-below-nav-sequans-bitcoin-exit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 02:14"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Sequans exits Bitcoin treasury strategy after selling remaining 314 BTC",
+   "link": "https://cointelegraph.com/news/sequans-exits-bitcoin-treasury-strategy-after-selling-remaining-314-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 02:13"
+  },
+  {
+   "source": "The Block",
+   "title": "New York moves to block Polymarket from the state, alleging it’s running an illegal gambling operation",
+   "link": "https://www.theblock.co/news/regulation/2026-09-24-new-york-block-polymarket-alleging-illegal-gambling-operation-416279",
+   "time": "09-25 01:25"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "SoFi tie-up shows stablecoins can provide alternative blockchain settlement rail",
+   "link": "https://cointelegraph.com/news/sofi-moves-25b-card-program-to-stablecoin-settlement-with-mastercard?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 00:57"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
+   "link": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
+   "time": "09-25 00:48"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "New York sues Polymarket over alleged illegal gambling business",
+   "link": "https://cointelegraph.com/news/new-york-polymarket-illegal-gambling-operation-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-25 00:27"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Bitcoin’s bear markets are getting milder. Bull markets may be next",
+   "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-s-bear-markets-are-getting-milder-the-bull-markets-may-be-next",
+   "time": "09-25 00:26"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "UK’s largest banks complete world’s first interbank transactions using tokenized deposits",
+   "link": "https://www.coindesk.com/business/2026/09/24/uk-s-largest-banks-complete-world-s-first-interbank-transactions-using-tokenized-deposits",
+   "time": "09-25 00:07"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Crypto for Advisors:The hidden costs of holding your own bitcoin",
+   "link": "https://www.coindesk.com/coindesk-indices/2026/09/24/crypto-for-advisors-the-hidden-costs-of-holding-your-own-bitcoin",
+   "time": "09-24 23:49"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "European stablecoin issuer Qivalis sees transformation of global trade finance",
+   "link": "https://www.coindesk.com/business/2026/09/24/european-stablecoin-issuer-qivalis-sees-transformation-of-global-trade-finance",
+   "time": "09-24 23:41"
+  },
+  {
+   "source": "The Block",
+   "title": "Ondo launches onchain portfolio tokens based on BlackRock-developed strategies",
+   "link": "https://www.theblock.co/news/markets/2026-09-24-ondo-launches-onchain-portfolio-tokens-based-blackrock-developed-strategies-416260",
+   "time": "09-24 23:27"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "IBM opens beta Swift ledger link for 24/7 tokenized deposits",
+   "link": "https://cointelegraph.com/news/ibm-banks-swift-ledger-tokenized-deposit-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 22:29"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Cathie Wood's ARK teams with Securitize to tokenize venture fund with OpenAI, Anthropic stakes",
+   "link": "https://www.coindesk.com/business/2026/09/24/cathie-wood-s-ark-teams-with-securitize-to-tokenize-venture-fund-with-openai-anthropic-stakes",
+   "time": "09-24 22:00"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Solana Foundation hires Binance, Polygon veterans as it ramps up tokenized finance push",
+   "link": "https://www.coindesk.com/business/2026/09/24/solana-foundation-hires-binance-polygon-veterans-as-it-ramps-up-tokenized-finance-push",
+   "time": "09-24 22:00"
+  },
+  {
+   "source": "The Block",
+   "title": "Solana Foundation taps Binance, Polygon vets to drive institutional adoption and payments",
+   "link": "https://www.theblock.co/news/ecosystems/2026-09-24-solana-foundation-taps-binance-polygon-vets-to-drive-institutional-adoption-and-payments-416254",
+   "time": "09-24 22:00"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Solana Foundation hires ex-Binance CMO and payments exec as new partnerships expand",
+   "link": "https://cointelegraph.com/news/solana-foundation-binance-cmo-payments-executive?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 22:00"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Crypto investment firm RockawayX is betting $150 million on yield becoming next big use case",
+   "link": "https://www.coindesk.com/business/2026/09/23/rockawayx-is-betting-usd150-million-on-yield-becoming-crypto-s-next-big-use-case",
+   "time": "09-24 21:31"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "EU's financial regulator to make AI and tokenization a supervisory priority in 2027",
+   "link": "https://www.coindesk.com/policy/2026/09/24/eu-s-financial-regulator-to-make-ai-and-tokenization-a-supervisory-priority-in-2027",
+   "time": "09-24 21:26"
+  },
+  {
+   "source": "The Block",
+   "title": "HIFI raises $37 million Series A to expand tokenized capital markets infrastructure",
+   "link": "https://www.theblock.co/news/business/2026-09-24-hifi-raises-37-million-series-a-to-expand-tokenized-capital-markets-infrastructure-416242",
+   "time": "09-24 21:00"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "HIFI raises $37M to expand stablecoin payments, tokenized markets",
+   "link": "https://cointelegraph.com/news/hifi-raises-37m-to-expand-stablecoin-payments-tokenized-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 21:00"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Brooklyn man sent to prison for 12 years for stealing $16M in a Coinbase phishing scheme",
+   "link": "https://www.coindesk.com/business/2026/09/24/brooklyn-man-sent-to-prison-for-12-years-for-stealing-usd16m-in-a-coinbase-phishing-scheme",
+   "time": "09-24 20:33"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Litecoin token has its moment as network activity booms",
+   "link": "https://www.coindesk.com/daybook-us/2026/09/24/litecoin-token-has-its-moment-as-network-activity-booms",
+   "time": "09-24 20:26"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Era of pure crypto exchanges is ending, Bybit CEO says",
+   "link": "https://cointelegraph.com/news/era-pure-crypto-exchanges-end-bybit-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 20:24"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Live updates: Oil back on the rise as Iran denies report of deal talks",
+   "link": "https://www.coindesk.com/tech/2026/09/24/live-updates-bitcoin-edges-lower-as-bond-yields-take-center-stage",
+   "time": "09-24 20:20"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Bitcoin slides to $83,300 as bond yields hit highest level since 2007",
+   "link": "https://www.coindesk.com/markets/2026/09/24/bitcoin-steadies-near-usd84-000-after-bond-yields-hit-a-2007-high",
+   "time": "09-24 19:30"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "EU banking watchdog calls for crypto lending rules under MiCA",
+   "link": "https://cointelegraph.com/news/eu-eba-crypto-lending-defi-mica-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 19:30"
+  },
+  {
+   "source": "Cointelegraph",
+   "title": "Bitcoin falls below $84K as 10-year Treasury yield hits 19-year high",
+   "link": "https://cointelegraph.com/markets/bitcoin-fall-84k-treasury-yield-hits-19-year-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+   "time": "09-24 19:15"
+  },
+  {
+   "source": "CoinDesk",
+   "title": "Traders price in 4 Fed rate hikes by June 2027 as bitcoin slides below $83,000",
+   "link": "https://www.coindesk.com/markets/2026/09/24/traders-are-pricing-in-4-fed-rate-hikes-as-bitcoin-slides-below-usd83-000",
+   "time": "09-24 19:11"
+  },
+  {
+   "source": "The Block",
+   "title": "IBM connects Digital Asset Haven to Swift blockchain ledger for tokenized deposit transactions",
+   "link": "https://www.theblock.co/news/business/2026-09-24-ibm-connects-digital-asset-haven-to-swift-blockchain-ledger-for-tokenized-deposit-transactions-416237",
+   "time": "09-24 19:00"
+  }
+ ],
+ "commentary": [
+  {
+   "source": "Sean Farrell (구글 알리미)",
+   "title": "(피드 URL 미설정)",
+   "link": "",
+   "time": ""
+  }
+ ]
+}
