@@ -333,3 +333,71 @@
 2026-09-25 09:45 KST,Z.점수,judgment_raw,오늘 구간,중립,,,2026-09-25,ok,점수 계산(coin_daily),,,
 2026-09-25 09:45 KST,Z.점수,judgment,판정,중립,,,2026-09-25,ok,점수 계산(coin_daily),,,
 2026-09-25 09:45 KST,Z.점수,target,BTC 목표 비중(%),60,,,2026-09-25,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,A.매크로,nasdaq,나스닥 종합지수,27068.717,26939.369,pt,2026-09-25,ok,Yahoo Finance,yfinance:^IXIC,https://finance.yahoo.com/quote/%5EIXIC,
+2026-09-26 09:46 KST,A.매크로,nasdaq_5d_pct,나스닥 5거래일 변화율,2.06,3.7,%,2026-09-25,ok,Yahoo Finance,yfinance:^IXIC,https://finance.yahoo.com/quote/%5EIXIC,
+2026-09-26 09:46 KST,A.매크로,nasdaq_ma50,나스닥 50일 이평,26169.53,26126.29,pt,2026-09-25,ok,Yahoo Finance,yfinance:^IXIC,https://finance.yahoo.com/quote/%5EIXIC,종가가 이평 위면 추세 양호
+2026-09-26 09:46 KST,A.매크로,dxy,달러인덱스(DXY),101.035,101.29,pt,2026-09-25,ok,Yahoo Finance,yfinance:DX-Y.NYB,https://finance.yahoo.com/quote/DX-Y.NYB,
+2026-09-26 09:46 KST,A.매크로,dxy_20d_pct,DXY 20거래일 변화율,1.89,2.4,%,2026-09-25,ok,Yahoo Finance,yfinance:DX-Y.NYB,https://finance.yahoo.com/quote/DX-Y.NYB,
+2026-09-26 09:46 KST,A.매크로,usdjpy,USD/JPY,157.185,158.265,엔,2026-09-25,ok,Yahoo Finance,yfinance:JPY=X,https://finance.yahoo.com/quote/JPY%3DX,
+2026-09-26 09:46 KST,A.매크로,usdjpy_5d_pct,USD/JPY 5거래일 변화율,0.68,1.67,%,2026-09-25,ok,Yahoo Finance,yfinance:JPY=X,https://finance.yahoo.com/quote/JPY%3DX,
+2026-09-26 09:46 KST,A.매크로,cpi_yoy,CPI 전년비,3.71,3.54,%,2026-08-01,ok,FRED,https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key=***&file_type=json&sort_order=desc&limit=24,https://fred.stlouisfed.org/series/CPIAUCSL,FRED 갱신일 2026-09-11 (발표 후 30일 이내)
+2026-09-26 09:46 KST,A.매크로,core_cpi_yoy,근원 CPI 전년비,2.76,2.79,%,2026-08-01,ok,FRED,https://api.stlouisfed.org/fred/series/observations?series_id=CPILFESL&api_key=***&file_type=json&sort_order=desc&limit=24,https://fred.stlouisfed.org/series/CPILFESL,FRED 갱신일 2026-09-11 (발표 후 30일 이내)
+2026-09-26 09:46 KST,A.매크로,pce_yoy,PCE 전년비,3.7,3.72,%,2026-07-01,ok,FRED,https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=***&file_type=json&sort_order=desc&limit=24,https://fred.stlouisfed.org/series/PCEPI,FRED 갱신일 2026-08-26 (점수 미반영: 발표 후 30일 경과)
+2026-09-26 09:46 KST,A.매크로,core_pce_yoy,근원 PCE 전년비,3.34,3.34,%,2026-07-01,ok,FRED,https://api.stlouisfed.org/fred/series/observations?series_id=PCEPILFE&api_key=***&file_type=json&sort_order=desc&limit=24,https://fred.stlouisfed.org/series/PCEPILFE,FRED 갱신일 2026-08-26 (점수 미반영: 발표 후 30일 경과)
+2026-09-26 09:46 KST,A.매크로,infl_signal,인플레이션 방향 합계,-1,-1,,2026-09-26,ok,FRED,,https://fred.stlouisfed.org/,최근 발표 지표 중 전년비 둔화 +1 / 재가속 −1의 합
+2026-09-26 09:46 KST,C.파생·가격,btc_close,BTC 일봉 종가,84093.13,84385.46,USD,2026-09-25,ok,Coinbase 현물,https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400,https://www.coinbase.com/price/bitcoin,
+2026-09-26 09:46 KST,C.파생·가격,rsi14,"RSI(14, 일봉)",64.31,65.43,,2026-09-25,ok,Coinbase 현물,https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400,https://www.coinbase.com/price/bitcoin,70↑ 과매수 / 30↓ 과매도
+2026-09-26 09:46 KST,C.파생·가격,price_7d_pct,BTC 7일 가격 변화율,3.98,10.53,%,2026-09-25,ok,Coinbase 현물,https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=86400,https://www.coinbase.com/price/bitcoin,
+2026-09-26 09:46 KST,C.파생·가격,oi,선물 미결제약정(OI),3.16,3.17,십억$,2026-09-25,ok,OKX 선물,https://www.okx.com/api/v5/rubik/stat/contracts/open-interest-volume?ccy=BTC&period=1D,https://www.okx.com/trade-swap/btc-usdt-swap,
+2026-09-26 09:46 KST,C.파생·가격,oi_7d_pct,OI 7일 변화율,0.18,8.86,%,2026-09-25,ok,OKX 선물,https://www.okx.com/api/v5/rubik/stat/contracts/open-interest-volume?ccy=BTC&period=1D,https://www.okx.com/trade-swap/btc-usdt-swap,달러 기준 OI라 가격 변동이 섞여 있음
+2026-09-26 09:46 KST,C.파생·가격,ls_account,롱/숏 계정비율,1.29,1.33,배,2026-09-25,ok,OKX 선물,https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio?ccy=BTC&period=1D,https://www.okx.com/trade-swap/btc-usdt-swap,1 초과면 롱 우위
+2026-09-26 09:46 KST,C.파생·가격,ls_account_pct,롱/숏 계정비율 분포 위치,73.3,56.7,백분위,2026-09-25,ok,OKX 선물,https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio?ccy=BTC&period=1D,https://www.okx.com/trade-swap/btc-usdt-swap,OKX 선물 최근 30일 분포 기준. 높을수록 롱 쏠림
+2026-09-26 09:46 KST,C.파생·가격,funding,펀딩비(최근 1회),0.0017,0.0034,%,2026-09-26 00:00 UTC,ok,OKX 선물,https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&limit=6,https://www.okx.com/trade-swap/btc-usdt-swap,0.05%↑ 과열
+2026-09-26 09:46 KST,C.파생·가격,funding_avg3,펀딩비 최근 3회 평균,0.0041,0.0007,%,2026-09-26 00:00 UTC,ok,OKX 선물,https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&limit=6,https://www.okx.com/trade-swap/btc-usdt-swap,
+2026-09-26 09:46 KST,C.파생·가격,dvol,DVOL(BTC 내재변동성),34.77,36.0,,2026-09-26 00:00 UTC,ok,Deribit,https://www.deribit.com/api/v2/public/get_volatility_index_data?currency=BTC&start_timestamp=1790124373805&end_timestamp=1790383573805&resolution=3600,https://www.deribit.com/statistics/BTC/volatility-index,
+2026-09-26 09:46 KST,C.파생·가격,skew25,옵션 25델타 스큐(풋IV−콜IV),0.62,1.12,vol pt,2026-09-26 00:46 UTC,ok,Deribit,https://www.deribit.com/api/v2/public/get_instruments?currency=BTC&kind=option&expired=false,https://www.deribit.com/options/BTC,"만기 2026-10-30, 콜 BTC-30OCT26-91000-C / 풋 BTC-30OCT26-79000-P. 양수면 하방 헤지 수요 우위"
+2026-09-26 09:46 KST,B.자금흐름,usdt_d,테더 도미넌스,6.355,6.334,%,2026-09-26 00:37 UTC,ok,CoinGecko,https://api.coingecko.com/api/v3/global,https://www.coingecko.com/en/global-charts,상승=위험회피 / TradingView USDT.D와 계산 방식 다름
+2026-09-26 09:46 KST,B.자금흐름,total_mcap,전체 시가총액(TOTAL),2.8869,2.8957,조$,2026-09-26 00:37 UTC,ok,CoinGecko,https://api.coingecko.com/api/v3/global,https://www.coingecko.com/en/global-charts,
+2026-09-26 09:46 KST,B.자금흐름,etf_total,BTC 현물 ETF 순유입(전체),190.6,347.0,백만$,2026-09-24,ok,TFTC (SoSoValue·Farside 집계),https://www.tftc.io/bitcoin-etf-flows/data.json,https://www.tftc.io/bitcoin-etf-flows,6거래일 연속 순유입 / 집계 기준일 2026-09-24
+2026-09-26 09:46 KST,B.자금흐름,etf_ibit,IBIT(블랙록) 순유입,162.6,166.3,백만$,2026-09-24,ok,TFTC (SoSoValue·Farside 집계),https://www.tftc.io/bitcoin-etf-flows/data.json,https://www.tftc.io/bitcoin-etf-flows,
+2026-09-26 09:46 KST,B.자금흐름,etf_5d_sum,ETF 5거래일 순유입 합계,2684.4,2653.2,백만$,2026-09-24,ok,TFTC (SoSoValue·Farside 집계),https://www.tftc.io/bitcoin-etf-flows/data.json,https://www.tftc.io/bitcoin-etf-flows,
+2026-09-26 09:46 KST,B.자금흐름,etf_streak,ETF 연속일수(+유입/−유출),6,5,일,2026-09-24,ok,TFTC (SoSoValue·Farside 집계),https://www.tftc.io/bitcoin-etf-flows/data.json,https://www.tftc.io/bitcoin-etf-flows,
+2026-09-26 09:46 KST,D.온체인,mvrv_z,MVRV Z-Score,0.9259,0.78,,2026-09-19,ok,BGeometrics,https://bitcoin-data.com/v1/mvrv-zscore/last,https://charts.bgeometrics.com/,0 이하 역사적 매수구간 / 7 이상 과열
+2026-09-26 09:46 KST,D.온체인,sth_mvrv,단기보유자 MVRV,1.13,1.13,,2026-09-19,ok,BGeometrics,https://bitcoin-data.com/v1/sth-mvrv/last,https://charts.bgeometrics.com/,
+2026-09-26 09:46 KST,D.온체인,sth_rp,단기보유자 실현가(STH-RP),74401.0,74640.0,$,2026-09-19,ok,BGeometrics,https://bitcoin-data.com/v1/sth-mvrv/last,https://charts.bgeometrics.com/,가격 ÷ STH-MVRV로 계산 (가격 84074.0$). 가격이 위면 강세 유지
+2026-09-26 09:46 KST,D.온체인,ex_in_btc,거래소 BTC 유입,19032.1,22387.6,BTC,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExNtv&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,
+2026-09-26 09:46 KST,D.온체인,ex_out_btc,거래소 BTC 유출,26693.5,32444.5,BTC,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowOutExNtv&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,
+2026-09-26 09:46 KST,D.온체인,ex_net_7d,거래소 순유입 7일 합,-41054.2,-34394.8,BTC,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExUSD&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,
+2026-09-26 09:46 KST,D.온체인,ex_net_7d_pct,거래소 순유입 7일 합 분포 위치,2.2,6.7,백분위,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExUSD&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,최근 90일 분포 기준. 높을수록 매도 압력
+2026-09-26 09:46 KST,D.온체인,ex_net_btc,거래소 BTC 순유입,-7661.3,-10056.9,BTC,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=FlowInExNtv&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,양수=매도 압력 / 음수=축적
+2026-09-26 09:46 KST,D.온체인,ex_supply_30d_pct,거래소 보유량 30일 변화율,-0.6,-0.45,%,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyExNtv&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,
+2026-09-26 09:46 KST,D.온체인,ex_supply,거래소 BTC 보유량,2690689.0,2695209.0,BTC,2026-09-24,ok,Coin Metrics 커뮤니티,https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=SplyExNtv&frequency=1d&page_size=130&paging_from=end,https://charts.coinmetrics.io/crypto-data/,
+2026-09-26 09:46 KST,D.온체인,miner_to_ex,채굴자→거래소 유입,,,,,manual,수동 확인,,https://cryptoquant.com/asset/btc/chart/miner-flows,무료 소스 없음 → 수동 확인 목록 참고
+2026-09-26 09:46 KST,D.온체인,whale_ratio_proxy,고래비율(근사),,,,,fail,Arkham + Coin Metrics,,https://intel.arkm.com/,Arkham 키 없음
+2026-09-26 09:46 KST,Z.점수,score_ind_mvrv_z,점수: MVRV Z,1,,,2026-09-26,ok,점수 계산(coin_daily),,,MVRV Z 0.93
+2026-09-26 09:46 KST,Z.점수,score_ind_sth,점수: 가격÷STH-RP,0,,,2026-09-26,ok,점수 계산(coin_daily),,,가격÷STH-RP 1.130
+2026-09-26 09:46 KST,Z.점수,score_ind_etf,점수: 현물 ETF 순유입,2,,,2026-09-26,ok,점수 계산(coin_daily),,,6거래일 연속 순유입
+2026-09-26 09:46 KST,Z.점수,score_ind_ex_net,점수: 거래소 순유입(7일),2,,,2026-09-26,ok,점수 계산(coin_daily),,,7일 순유입 분포 2백분위
+2026-09-26 09:46 KST,Z.점수,score_ind_ex_supply,점수: 거래소 보유량(30일),1,,,2026-09-26,ok,점수 계산(coin_daily),,,30일 -0.60% (±0.5% 미만은 0점)
+2026-09-26 09:46 KST,Z.점수,score_ind_whale,점수: 고래비율(근사),,,,2026-09-26,fail,점수 계산(coin_daily),,,값 없음
+2026-09-26 09:46 KST,Z.점수,score_ind_usdt_d,점수: 테더 도미넌스(7일),,,,2026-09-26,fail,점수 계산(coin_daily),,,7일 전 값 없음
+2026-09-26 09:46 KST,Z.점수,score_ind_funding,점수: 펀딩비,1,,,2026-09-26,ok,점수 계산(coin_daily),,,3회 평균 0.0041%
+2026-09-26 09:46 KST,Z.점수,score_ind_rsi,점수: RSI(14),-1,,,2026-09-26,ok,점수 계산(coin_daily),,,RSI 64.3
+2026-09-26 09:46 KST,Z.점수,score_ind_ls,점수: 롱/숏 비율,-1,,,2026-09-26,ok,점수 계산(coin_daily),,,롱/숏 분포 73백분위
+2026-09-26 09:46 KST,Z.점수,score_ind_oi,점수: 미결제약정(OI),0,,,2026-09-26,ok,점수 계산(coin_daily),,,"OI 7일 +0.2%, 가격 +4.0%"
+2026-09-26 09:46 KST,Z.점수,score_ind_skew,점수: 옵션 스큐,0,,,2026-09-26,ok,점수 계산(coin_daily),,,+0.62
+2026-09-26 09:46 KST,Z.점수,score_ind_nasdaq,점수: 나스닥,1,,,2026-09-26,ok,점수 계산(coin_daily),,,50일선 위
+2026-09-26 09:46 KST,Z.점수,score_ind_dxy,점수: DXY,-1,,,2026-09-26,ok,점수 계산(coin_daily),,,"101.03, 20일 +1.9% (상승)"
+2026-09-26 09:46 KST,Z.점수,score_ind_usdjpy,점수: USD/JPY,0,,,2026-09-26,ok,점수 계산(coin_daily),,,157.19
+2026-09-26 09:46 KST,Z.점수,score_ind_infl,점수: CPI·PCE,-1,,,2026-09-26,ok,점수 계산(coin_daily),,,둔화−재가속 합계 -1
+2026-09-26 09:46 KST,Z.점수,score_ind_fomc,점수: 폴리마켓 금리인하,,,,2026-09-26,fail,점수 계산(coin_daily),,,FOMC 마켓 미설정 또는 값 없음
+2026-09-26 09:46 KST,Z.점수,score_group_밸류에이션,그룹 점수: 밸류에이션,25.0,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_group_수급,그룹 점수: 수급,83.3,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_group_파생·심리,그룹 점수: 파생·심리,-10.0,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_group_매크로,그룹 점수: 매크로,-12.5,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_total,총점,26.4,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_avg3,3일 평균 총점,24.1,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,score_coverage,판정 가능 비율,82.4,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,judgment_raw,오늘 구간,매수,,,2026-09-26,ok,점수 계산(coin_daily),,,
+2026-09-26 09:46 KST,Z.점수,judgment,판정,중립,,,2026-09-26,ok,점수 계산(coin_daily),,,"오늘 구간 '매수'는 첫날 → 내일도 같으면 변경, 오늘은 '중립' 유지"
+2026-09-26 09:46 KST,Z.점수,target,BTC 목표 비중(%),60,,,2026-09-26,ok,점수 계산(coin_daily),,,
