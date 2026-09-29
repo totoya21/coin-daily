@@ -1,0 +1,805 @@
+{
+ "run_at": "2026-09-29T14:09:22.410928+09:00",
+ "regime": {
+  "btc_d": 58.37084051699396,
+  "usdt_d": 6.417203445764532,
+  "btc30": 6.4426,
+  "btc7": -2.8984,
+  "ethbtc30": 2.1087,
+  "verdict": "중립 — 알트 국면이라고 보기 어려움, 신규 진입은 보수적으로",
+  "ok": 0
+ },
+ "sectors": [
+  {
+   "name": "RWA",
+   "category": "real-world-assets-rwa",
+   "n": 15,
+   "mcap": 61394551577.0,
+   "vol_mcap": 8.705741817002407,
+   "rs7": 22.349742625144426,
+   "rs30": 23.28886819739925,
+   "breadth": 0.8666666666666667,
+   "leader": {
+    "id": "figure-heloc",
+    "symbol": "FIGR_HELOC",
+    "name": "Figure Heloc",
+    "mcap": 23258566074.0,
+    "vol": 668031445.0,
+    "p7": -1.0544,
+    "p30": 0.2375,
+    "p24": null
+   },
+   "lrs7": 1.844,
+   "lrs30": -6.2051,
+   "frs7": 3.2259,
+   "top_followers": [
+    {
+     "id": "quant-network",
+     "symbol": "QNT",
+     "name": "Quant",
+     "mcap": 3595452177.0,
+     "vol": 1113867370.0,
+     "p7": 266.854,
+     "p30": 298.6498,
+     "p24": -2.71808
+    },
+    {
+     "id": "algorand",
+     "symbol": "ALGO",
+     "name": "Algorand",
+     "mcap": 1259042584.0,
+     "vol": 275488635.0,
+     "p7": 24.3142,
+     "p30": 59.5185,
+     "p24": 18.74304
+    },
+    {
+     "id": "ondo-finance",
+     "symbol": "ONDO",
+     "name": "Ondo",
+     "mcap": 2479659404.0,
+     "vol": 640003368.0,
+     "p7": 16.1399,
+     "p30": 45.6295,
+     "p24": -12.91761
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": 44.952205681777144,
+   "rank7": 1,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "DePIN",
+   "category": "depin",
+   "n": 15,
+   "mcap": 8742246154.0,
+   "vol_mcap": 10.170528378375378,
+   "rs7": 6.883611040305992,
+   "rs30": 29.724108516976628,
+   "breadth": 0.7333333333333333,
+   "leader": {
+    "id": "bittensor",
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "mcap": 3412901174.0,
+    "vol": 327594680.0,
+    "p7": -4.3505,
+    "p30": 27.885,
+    "p24": -2.3106
+   },
+   "lrs7": -1.4521000000000002,
+   "lrs30": 21.442400000000003,
+   "frs7": 6.43435,
+   "top_followers": [
+    {
+     "id": "grass",
+     "symbol": "GRASS",
+     "name": "Grass",
+     "mcap": 479485493.0,
+     "vol": 89338944.0,
+     "p7": 59.9695,
+     "p30": 87.0304,
+     "p24": 9.66156
+    },
+    {
+     "id": "the-graph",
+     "symbol": "GRT",
+     "name": "The Graph",
+     "mcap": 330990693.0,
+     "vol": 52552517.0,
+     "p7": 28.4413,
+     "p30": 84.9632,
+     "p24": -6.59939
+    },
+    {
+     "id": "iota",
+     "symbol": "IOTA",
+     "name": "IOTA",
+     "mcap": 259302141.0,
+     "vol": 60385651.0,
+     "p7": 16.6674,
+     "p30": 40.3356,
+     "p24": 8.38814
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -2.468989412784456,
+   "rank7": 2,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "AI",
+   "category": "artificial-intelligence",
+   "n": 15,
+   "mcap": 17924218958.0,
+   "vol_mcap": 13.855501691980615,
+   "rs7": 5.769106371201298,
+   "rs30": 86.40081710116867,
+   "breadth": 0.6666666666666666,
+   "leader": {
+    "id": "near",
+    "symbol": "NEAR",
+    "name": "NEAR Protocol",
+    "mcap": 6071221838.0,
+    "vol": 1366264349.0,
+    "p7": 5.7472,
+    "p30": 147.7355,
+    "p24": -11.55156
+   },
+   "lrs7": 8.6456,
+   "lrs30": 141.2929,
+   "frs7": 8.78435,
+   "top_followers": [
+    {
+     "id": "grass",
+     "symbol": "GRASS",
+     "name": "Grass",
+     "mcap": 479485493.0,
+     "vol": 89338944.0,
+     "p7": 59.9695,
+     "p30": 87.0304,
+     "p24": 9.37997
+    },
+    {
+     "id": "pearl-2",
+     "symbol": "PRL",
+     "name": "Pearl",
+     "mcap": 422810596.0,
+     "vol": 2971487.0,
+     "p7": 31.9989,
+     "p30": 362.5083,
+     "p24": -5.35835
+    },
+    {
+     "id": "the-graph",
+     "symbol": "GRT",
+     "name": "The Graph",
+     "mcap": 330990693.0,
+     "vol": 52552517.0,
+     "p7": 28.4413,
+     "p30": 84.9632,
+     "p24": -6.53574
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -4.826942257116301,
+   "rank7": 3,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "DeFi",
+   "category": "decentralized-finance-defi",
+   "n": 15,
+   "mcap": 66269124937.0,
+   "vol_mcap": 8.603584006006203,
+   "rs7": 5.29565990783774,
+   "rs30": 15.48602425118727,
+   "breadth": 0.6666666666666666,
+   "leader": {
+    "id": "hyperliquid",
+    "symbol": "HYPE",
+    "name": "Hyperliquid",
+    "mcap": 19330614900.0,
+    "vol": 804509084.0,
+    "p7": -6.2306,
+    "p30": 5.1896,
+    "p24": -3.45536
+   },
+   "lrs7": -3.3322,
+   "lrs30": -1.2529999999999992,
+   "frs7": 9.29945,
+   "top_followers": [
+    {
+     "id": "bitway",
+     "symbol": "BTW",
+     "name": "Bitway",
+     "mcap": 3133585815.0,
+     "vol": 48055460.0,
+     "p7": 40.1244,
+     "p30": 155.0452,
+     "p24": -9.98065
+    },
+    {
+     "id": "ethena",
+     "symbol": "ENA",
+     "name": "Ethena",
+     "mcap": 2522098482.0,
+     "vol": 531296111.0,
+     "p7": 18.338,
+     "p30": 58.2623,
+     "p24": -6.94887
+    },
+    {
+     "id": "ondo-finance",
+     "symbol": "ONDO",
+     "name": "Ondo",
+     "mcap": 2479659404.0,
+     "vol": 640003368.0,
+     "p7": 16.1399,
+     "p30": 45.6295,
+     "p24": -12.91761
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -3.3001208197450587,
+   "rank7": 4,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "AI 에이전트",
+   "category": "ai-agents",
+   "n": 15,
+   "mcap": 3426401209.0,
+   "vol_mcap": 13.083779384108896,
+   "rs7": 4.67552741677853,
+   "rs30": 34.325368730760886,
+   "breadth": 0.6666666666666666,
+   "leader": {
+    "id": "venice-token",
+    "symbol": "VVV",
+    "name": "Venice Token",
+    "mcap": 1321288585.0,
+    "vol": 49751386.0,
+    "p7": -11.1213,
+    "p30": 65.3757,
+    "p24": -2.93752
+   },
+   "lrs7": -8.2229,
+   "lrs30": 58.933099999999996,
+   "frs7": 9.1667,
+   "top_followers": [
+    {
+     "id": "talus",
+     "symbol": "US",
+     "name": "Talus",
+     "mcap": 80477051.0,
+     "vol": 7320018.0,
+     "p7": 69.4543,
+     "p30": 56.8433,
+     "p24": 1.11906
+    },
+    {
+     "id": "concordium",
+     "symbol": "CCD",
+     "name": "Concordium",
+     "mcap": 48550742.0,
+     "vol": 116197.0,
+     "p7": 20.5601,
+     "p30": -8.4865,
+     "p24": -2.55414
+    },
+    {
+     "id": "bankercoin-2",
+     "symbol": "BNKR",
+     "name": "BankrCoin",
+     "mcap": 40295932.0,
+     "vol": 2020626.0,
+     "p7": 19.9815,
+     "p30": 63.3593,
+     "p24": -4.6967
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -3.3932004674979526,
+   "rank7": 5,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "게임",
+   "category": "gaming",
+   "n": 15,
+   "mcap": 2051945719.0,
+   "vol_mcap": 2176.1544274066637,
+   "rs7": 3.984880731743616,
+   "rs30": 10.107447102838837,
+   "breadth": 0.8,
+   "leader": {
+    "id": "floki",
+    "symbol": "FLOKI",
+    "name": "FLOKI",
+    "mcap": 256094276.0,
+    "vol": 25400682.0,
+    "p7": -9.7825,
+    "p30": 5.511,
+    "p24": -4.29425
+   },
+   "lrs7": -6.8841,
+   "lrs30": -0.9315999999999995,
+   "frs7": 3.96705,
+   "top_followers": [
+    {
+     "id": "superfarm",
+     "symbol": "SUPER",
+     "name": "SuperVerse",
+     "mcap": 121495068.0,
+     "vol": 9343168.0,
+     "p7": 24.8019,
+     "p30": 73.4542,
+     "p24": -2.82412
+    },
+    {
+     "id": "immutable-x",
+     "symbol": "IMX",
+     "name": "Immutable",
+     "mcap": 148772834.0,
+     "vol": 21690553.0,
+     "p7": 12.6004,
+     "p30": 32.3321,
+     "p24": -5.33706
+    },
+    {
+     "id": "beam-2",
+     "symbol": "BEAM",
+     "name": "Beam",
+     "mcap": 103525425.0,
+     "vol": 5778325.0,
+     "p7": 4.4993,
+     "p30": 24.1537,
+     "p24": -2.09187
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -2.868894545771436,
+   "rank7": 6,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "Layer 2",
+   "category": "layer-2",
+   "n": 15,
+   "mcap": 9471911783.0,
+   "vol_mcap": 8.754043418016069,
+   "rs7": 1.291974338736797,
+   "rs30": 32.93802906448162,
+   "breadth": 0.5333333333333333,
+   "leader": {
+    "id": "okb",
+    "symbol": "OKB",
+    "name": "OKB",
+    "mcap": 2483726079.0,
+    "vol": 27179920.0,
+    "p7": -3.2498,
+    "p30": 3.3975,
+    "p24": 0.12019
+   },
+   "lrs7": -0.35139999999999993,
+   "lrs30": -3.0450999999999997,
+   "frs7": 3.82945,
+   "top_followers": [
+    {
+     "id": "soon-2",
+     "symbol": "SOON",
+     "name": "SOON",
+     "mcap": 100034814.0,
+     "vol": 76711885.0,
+     "p7": 52.5068,
+     "p30": 47.2606,
+     "p24": -14.94977
+    },
+    {
+     "id": "prometeus",
+     "symbol": "PROM",
+     "name": "Prom",
+     "mcap": 112522496.0,
+     "vol": 7120643.0,
+     "p7": 27.4357,
+     "p30": -15.1134,
+     "p24": -2.78813
+    },
+    {
+     "id": "immutable-x",
+     "symbol": "IMX",
+     "name": "Immutable",
+     "mcap": 148772834.0,
+     "vol": 21690553.0,
+     "p7": 12.6004,
+     "p30": 32.3321,
+     "p24": -5.33706
+    }
+   ],
+   "unlock": null,
+   "stage": "상대 강세",
+   "chg24": -3.4462513796248277,
+   "rank7": 7,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "Layer 1",
+   "category": "layer-1",
+   "n": 15,
+   "mcap": 718068912292.0,
+   "vol_mcap": 4.524088685904517,
+   "rs7": 0.9220241046372832,
+   "rs30": 5.8498457498451115,
+   "breadth": 0.6666666666666666,
+   "leader": {
+    "id": "ethereum",
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "mcap": 325487417966.0,
+    "vol": 15609685331.0,
+    "p7": -2.6261,
+    "p30": 8.5513,
+    "p24": 0.43124
+   },
+   "lrs7": 0.2723,
+   "lrs30": 2.1087,
+   "frs7": 2.2711,
+   "top_followers": [
+    {
+     "id": "hedera-hashgraph",
+     "symbol": "HBAR",
+     "name": "Hedera",
+     "mcap": 5275086910.0,
+     "vol": 1560300379.0,
+     "p7": 28.2938,
+     "p30": 60.4628,
+     "p24": 25.01387
+    },
+    {
+     "id": "bitcoin-cash",
+     "symbol": "BCH",
+     "name": "Bitcoin Cash",
+     "mcap": 6145006548.0,
+     "vol": 266615182.0,
+     "p7": 15.2097,
+     "p30": 24.5727,
+     "p24": -3.33961
+    },
+    {
+     "id": "canton-network",
+     "symbol": "CC",
+     "name": "Canton",
+     "mcap": 5302573423.0,
+     "vol": 48789481.0,
+     "p7": 13.9336,
+     "p30": 11.0748,
+     "p24": -4.57175
+    }
+   ],
+   "unlock": null,
+   "stage": "확산 (후발주 추격)",
+   "chg24": -0.6155823039213427,
+   "rank7": 8,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "거래소 토큰",
+   "category": "exchange-based-tokens",
+   "n": 15,
+   "mcap": 160581861714.0,
+   "vol_mcap": 2.4052425988677313,
+   "rs7": -0.7795626576114616,
+   "rs30": 3.9559308302374854,
+   "breadth": 0.5333333333333333,
+   "leader": {
+    "id": "binancecoin",
+    "symbol": "BNB",
+    "name": "BNB",
+    "mcap": 100707346422.0,
+    "vol": 1001950390.0,
+    "p7": -4.0976,
+    "p30": 8.9505,
+    "p24": -1.84872
+   },
+   "lrs7": -1.1991999999999998,
+   "lrs30": 2.5079000000000002,
+   "frs7": 0.8782,
+   "top_followers": [
+    {
+     "id": "pump-fun",
+     "symbol": "PUMP",
+     "name": "Pump.fun",
+     "mcap": 2265166648.0,
+     "vol": 461589149.0,
+     "p7": 9.3469,
+     "p30": -2.1795,
+     "p24": -6.36589
+    },
+    {
+     "id": "jupiter-exchange-solana",
+     "symbol": "JUP",
+     "name": "Jupiter",
+     "mcap": 1065626307.0,
+     "vol": 146035919.0,
+     "p7": 8.6398,
+     "p30": 49.7479,
+     "p24": -7.96466
+    },
+    {
+     "id": "crypto-com-chain",
+     "symbol": "CRO",
+     "name": "Cronos",
+     "mcap": 3398283003.0,
+     "vol": 28850426.0,
+     "p7": 0.9084,
+     "p30": 19.4909,
+     "p24": 5.13987
+    }
+   ],
+   "unlock": null,
+   "stage": "소외",
+   "chg24": -2.222137091931617,
+   "rank7": 9,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "프라이버시",
+   "category": "privacy-coins",
+   "n": 8,
+   "mcap": 33867122734.0,
+   "vol_mcap": 4.455539931312548,
+   "rs7": -3.3154836752463814,
+   "rs30": 42.15391828728578,
+   "breadth": 0.5,
+   "leader": {
+    "id": "zcash",
+    "symbol": "ZEC",
+    "name": "Zcash",
+    "mcap": 23116024417.0,
+    "vol": 1369053254.0,
+    "p7": -6.3768,
+    "p30": 64.0952,
+    "p24": -12.53998
+   },
+   "lrs7": -3.4784,
+   "lrs30": 57.65260000000001,
+   "frs7": 2.2749,
+   "top_followers": [
+    {
+     "id": "pirate-chain",
+     "symbol": "ARRR",
+     "name": "Pirate Chain",
+     "mcap": 52656496.0,
+     "vol": 486057.0,
+     "p7": 9.0102,
+     "p30": 39.694,
+     "p24": -13.7165
+    },
+    {
+     "id": "zcoin",
+     "symbol": "FIRO",
+     "name": "Firo",
+     "mcap": 24125590.0,
+     "vol": 153136.0,
+     "p7": 6.3782,
+     "p30": 88.7993,
+     "p24": -0.02286
+    },
+    {
+     "id": "verge",
+     "symbol": "XVG",
+     "name": "Verge",
+     "mcap": 51064538.0,
+     "vol": 4010299.0,
+     "p7": 0.1898,
+     "p30": 26.2406,
+     "p24": -5.96553
+    }
+   ],
+   "unlock": null,
+   "stage": "조정 (순환 이탈 가능)",
+   "chg24": -8.964720382986444,
+   "rank7": 10,
+   "day_move": null,
+   "wk_move": null
+  },
+  {
+   "name": "밈",
+   "category": "meme-token",
+   "n": 15,
+   "mcap": 27934830854.0,
+   "vol_mcap": 9.176035331651054,
+   "rs7": -5.636658639532799,
+   "rs30": 0.11821590560209305,
+   "breadth": 0.3333333333333333,
+   "leader": {
+    "id": "dogecoin",
+    "symbol": "DOGE",
+    "name": "Dogecoin",
+    "mcap": 14530699800.0,
+    "vol": 1016419786.0,
+    "p7": -8.7768,
+    "p30": 9.4331,
+    "p24": -1.24634
+   },
+   "lrs7": -5.878399999999999,
+   "lrs30": 2.9905,
+   "frs7": -5.5843,
+   "top_followers": [
+    {
+     "id": "ribbita-by-virtuals",
+     "symbol": "TIBBIR",
+     "name": "Ribbita by Virtuals",
+     "mcap": 332221688.0,
+     "vol": 3490846.0,
+     "p7": 24.8503,
+     "p30": 17.6857,
+     "p24": 13.35723
+    },
+    {
+     "id": "pump-fun",
+     "symbol": "PUMP",
+     "name": "Pump.fun",
+     "mcap": 2265166648.0,
+     "vol": 461589149.0,
+     "p7": 9.3469,
+     "p30": -2.1795,
+     "p24": -6.36589
+    },
+    {
+     "id": "ape-and-pepe",
+     "symbol": "APEPE",
+     "name": "Ape and Pepe",
+     "mcap": 275113796.0,
+     "vol": 15761779.0,
+     "p7": 6.0687,
+     "p30": 15.9588,
+     "p24": -1.13392
+    }
+   ],
+   "unlock": null,
+   "stage": "소외",
+   "chg24": -2.6730662400709178,
+   "rank7": 11,
+   "day_move": null,
+   "wk_move": null
+  }
+ ],
+ "candidates": [
+  {
+   "sector": "게임",
+   "why": [
+    "시총 대비 거래량 높음 (자금 유입 가능성)"
+   ]
+  }
+ ],
+ "radar": [
+  {
+   "id": "tokenized-products",
+   "name": "Tokenized Assets",
+   "mcap": 46922342251.26814,
+   "chg24": 102.5611181206973,
+   "vol": 2265810527.8519263
+  },
+  {
+   "id": "asset-backed-tokens",
+   "name": "Crypto-Backed Tokens",
+   "mcap": 438906477.55274564,
+   "chg24": 19.413898293427437,
+   "vol": 2388847756.8400774
+  },
+  {
+   "id": "directed-acyclic-graph-dag",
+   "name": "Directed Acyclic Graph (DAG)",
+   "mcap": 6892901813.207829,
+   "chg24": 16.613396587679254,
+   "vol": 1656386733.3528936
+  },
+  {
+   "id": "chinese-meme",
+   "name": "Chinese Meme",
+   "mcap": 791659237.7804086,
+   "chg24": 11.467274303295525,
+   "vol": 71012791.56172433
+  },
+  {
+   "id": "curve-ecosystem",
+   "name": "Curve Ecosystem",
+   "mcap": 873519123.681737,
+   "chg24": 9.405383817760638,
+   "vol": 169411385.80601162
+  },
+  {
+   "id": "tokenized-gold",
+   "name": "Tokenized Gold",
+   "mcap": 5650459479.170435,
+   "chg24": 7.822209595686219,
+   "vol": 542750239.5648451
+  },
+  {
+   "id": "tokenized-commodities",
+   "name": "Tokenized Commodities",
+   "mcap": 5920637617.635221,
+   "chg24": 7.364123722121057,
+   "vol": 573310021.5668454
+  },
+  {
+   "id": "tokenized-exchange-traded-funds-etfs",
+   "name": "Tokenized Exchange-Traded Funds (ETFs)",
+   "mcap": 599752653.8054744,
+   "chg24": 5.668318980311521,
+   "vol": 186392201.7854989
+  }
+ ],
+ "stable_flows": [
+  {
+   "chain": "Tron",
+   "now": 94019472692.75,
+   "c7": 1.2789005875493586,
+   "c30": 1.9312771713146493
+  },
+  {
+   "chain": "Base",
+   "now": 5076368022.21,
+   "c7": 1.0580667311628433,
+   "c30": 2.3676652427248923
+  },
+  {
+   "chain": "BSC",
+   "now": 16931071696.76,
+   "c7": 0.2646802704835638,
+   "c30": -1.5985510460030161
+  },
+  {
+   "chain": "Ethereum",
+   "now": 147193975689.82,
+   "c7": 0.13993174180395584,
+   "c30": -0.47822258249933247
+  },
+  {
+   "chain": "Sui",
+   "now": 489927856.38,
+   "c7": 0.003378035934975543,
+   "c30": 12.971065643732892
+  },
+  {
+   "chain": "Hyperliquid L1",
+   "now": 7604861356.16,
+   "c7": -1.172211529457634,
+   "c30": 10.922354894006968
+  },
+  {
+   "chain": "Arbitrum",
+   "now": 3895764739.15,
+   "c7": -1.2140597867749792,
+   "c30": 3.1200686989161674
+  },
+  {
+   "chain": "Solana",
+   "now": 16600825401.97,
+   "c7": -2.981862209002828,
+   "c30": 3.9987237994504987
+  }
+ ],
+ "notes": [
+  "DefiLlama 언락 실패: 402 Client Error: Payment Required for url: https://api.llama.fi/emissions (MC/FDV로 대체 판단)",
+  "'무기한 선물 DEX' 카테고리 id 'perpetuals'가 CoinGecko에 없음 — config.json에서 id 확인 필요"
+ ]
+}
