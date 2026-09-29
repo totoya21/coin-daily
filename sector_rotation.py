@@ -7,7 +7,7 @@
 - 매일 기록(data/sectors_history.csv)이 쌓이면 전일·1주 전 대비 순위 변화로 '순환이 옮겨가는 방향'을 잡는다.
 - 이 표는 '오를 섹터'를 맞히는 도구가 아니라 '자금이 어디로 움직이는지'를 보는 도구다.
 - 실행: python sector_rotation.py   (결과: data/sectors_latest.md, data/sectors_latest.json, data/sectors_history.csv)
-소스: CoinGecko(카테고리·시세), DefiLlama(스테이블코인·언락)
+소스: CoinGecko(카테고리·시세·FDV), DefiLlama(스테이블코인)
 """
 import csv
 import datetime as dt
@@ -19,7 +19,7 @@ import time
 from pathlib import Path
 
 from coin_daily import KST, get_json, num, rnd
-from alt_screener import EXCLUDE_WORDS, cg, llama_unlocks, regime
+from alt_screener import EXCLUDE_WORDS, cg, regime
 
 BASE_DIR = Path(__file__).resolve().parent
 STABLE = "https://stablecoins.llama.fi"
@@ -35,7 +35,7 @@ DEFAULTS = {
         {"name": "AI 에이전트", "category": "ai-agents"},
         {"name": "RWA", "category": "real-world-assets-rwa"},
         {"name": "DeFi", "category": "decentralized-finance-defi"},
-        {"name": "무기한 선물 DEX", "category": "perpetuals"},
+        {"name": "무기한 선물 DEX", "category": "decentralized-perpetuals"},
         {"name": "Layer 1", "category": "layer-1"},
         {"name": "Layer 2", "category": "layer-2"},
         {"name": "밈", "category": "meme-token"},
@@ -89,7 +89,7 @@ def sector_coins(cat, s, key):
         if not mc or mc < s["min_mcap_usd"]:
             continue
         out.append({"id": i, "symbol": str(m.get("symbol", "")).upper(), "name": m.get("name"), "mcap": mc,
-                    "vol": num(m.get("total_volume")) or 0,
+                    "vol": num(m.get("total_volume")) or 0, "fdv": num(m.get("fully_diluted_valuation")),
                     "p7": num(m.get("price_change_percentage_7d_in_currency")),
                     "p30": num(m.get("price_change_percentage_30d_in_currency")),
                     "p24": num(m.get("price_change_percentage_24h_in_currency"))})
@@ -124,7 +124,7 @@ def wavg(coins, k):
     return sum(v * m for v, m in xs) / w if w else None
 
 
-def analyze(name, cat, coins, btc7, btc30, unlock, st):
+def analyze(name, cat, coins, btc7, btc30, st):
     lead, fol = coins[0], coins[1:]
     s7, s30 = wavg(coins, "p7"), wavg(coins, "p30")
     rs7 = None if s7 is None else s7 - btc7
@@ -139,7 +139,8 @@ def analyze(name, cat, coins, btc7, btc30, unlock, st):
     top_f = sorted([c for c in fol if c["p7"] is not None], key=lambda c: c["p7"], reverse=True)[:3]
     d = {"name": name, "category": cat, "n": len(coins), "mcap": mc, "vol_mcap": vol / mc * 100 if mc else None,
          "rs7": rs7, "rs30": rs30, "breadth": breadth, "leader": lead, "lrs7": lrs7, "lrs30": lrs30,
-         "frs7": frs7, "top_followers": top_f, "unlock": unlock.get(lead["id"])}
+         "frs7": frs7, "top_followers": top_f,
+         "mc_fdv": (lead["mcap"] / lead["fdv"]) if lead.get("fdv") else None}
     d["stage"] = stage(d, st)
     return d
 
@@ -228,8 +229,6 @@ def main():
         notes.append(f"카테고리 목록 실패: {str(e)[:80]} (id 검증·레이더 생략)")
 
     print("[3/5] 섹터별 코인 ...", flush=True)
-    unlock, n1 = llama_unlocks()
-    notes += n1
     rows = []
     for sec in s["sectors"]:
         cat = sec["category"]
@@ -244,7 +243,7 @@ def main():
         if len(coins) < 3:
             notes.append(f"'{sec['name']}' 조건 통과 코인 {len(coins)}개 — 계산 생략")
             continue
-        d = analyze(sec["name"], cat, coins, btc7, btc30, unlock, s["stage"])
+        d = analyze(sec["name"], cat, coins, btc7, btc30, s["stage"])
         d["chg24"] = (cats.get(cat) or {}).get("chg24")
         rows.append(d)
         print(f"       {sec['name']:<10} {d['stage']}", flush=True)
@@ -290,15 +289,16 @@ def main():
                  f"{pct(d['vol_mcap'], 1, 1)} | {mv(d['day_move'])} / {mv(d['wk_move'])} |")
     L += ["", "확산도 = 구성 코인 중 7일 수익률이 BTC를 이긴 비율. 순위 변화는 기록이 쌓여야 표시된다.", "",
           "## 2. 대장주 vs 후발주", "",
-          "| 섹터 | 대장 (시총 1위) | 대장 7일 | 대장 30일 | 후발주 7일 중앙값 | 7일 강한 후발주 | 대장 언락 |",
+          "| 섹터 | 대장 (시총 1위) | 대장 7일 | 대장 30일 | 후발주 7일 중앙값 | 7일 강한 후발주 | 대장 유통비율 |",
           "|---|---|---|---|---|---|---|"]
     for d in rows:
-        ld, u = d["leader"], d["unlock"]
-        ul = "—" if not u else f"{u[0]:.0f}일 뒤 시총의 {u[1]:.1f}%" + (" ⚠" if u[0] <= 30 and u[1] >= 2 else "")
+        ld, r = d["leader"], d["mc_fdv"]
+        ul = "—" if r is None else f"{min(r, 1) * 100:.0f}%" + (" ⚠ 언락 확인" if r < 0.5 else "")
         tf = ", ".join(f"{c['symbol']} {f(c['p7'] - btc7, 0)}" for c in d["top_followers"]) or "—"
         L.append(f"| {d['name']} | {ld['symbol']} ({money(ld['mcap'])}) | {f(d['lrs7'])} | {f(d['lrs30'])} | "
                  f"{f(d['frs7'])} | {tf} | {ul} |")
-    L += ["", "대장이 앞서고 후발주가 안 따라오면 초기, 후발주가 대장을 따라잡으면 확산, 소형주까지 급등하면 후반부로 본다.", "",
+    L += ["", "대장이 앞서고 후발주가 안 따라오면 초기, 후발주가 대장을 따라잡으면 확산, 소형주까지 급등하면 후반부로 본다.",
+          "유통비율 = 시총/FDV. 50% 미만이면 앞으로 풀릴 물량이 많다는 뜻이라 언락 일정을 따로 확인한다.", "",
           "## 3. 다음 순환 후보 (데이터 기준)", ""]
     if cands:
         for d, why in cands:
@@ -319,7 +319,7 @@ def main():
           "- 언락 상세: https://tokenomist.ai", "",
           "## 출처", "",
           "- 카테고리·시세: CoinGecko (https://www.coingecko.com/en/categories)",
-          "- 스테이블코인·언락: DefiLlama (https://defillama.com/stablecoins)", ""]
+          "- 스테이블코인: DefiLlama (https://defillama.com/stablecoins)", ""]
     if notes:
         L += ["## 수집 경고", ""] + [f"- {x}" for x in notes] + [""]
     (out_dir / "sectors_latest.md").write_text("\n".join(L), encoding="utf-8")
